@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14F5481C-153F-42E8-BBBE-FEF21A352B11}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UpdateModul</RootNamespace>
+    <AssemblyName>UpdateModul</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="module\CAsyncWebScraper.cs" />
+    <Compile Include="shared\CVersionConfigHelper.cs" />
+    <Compile Include="config\gui\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="config\gui\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="config\gui\frmPassw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="config\gui\frmPassw.Designer.cs">
+      <DependentUpon>frmPassw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lang\translations.Designer.cs" />
+    <Compile Include="config\Program.cs" />
+    <Compile Include="helper\CBaseVersionLookupHelper.cs" />
+    <Compile Include="module\ControlExtensions.cs" />
+    <Compile Include="shared\CReturnCodes.cs" />
+    <Compile Include="helper\CSubVersionLookupHelper.cs" />
+    <Compile Include="module\gui\frmBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="module\gui\frmBrowser.designer.cs">
+      <DependentUpon>frmBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="module\gui\frmDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="module\gui\frmDownload.Designer.cs">
+      <DependentUpon>frmDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shared\CGlobVars.cs" />
+    <Compile Include="shared\CLog.cs" />
+    <Compile Include="shared\RZITools.cs" />
+    <Compile Include="shared\CVersionLookupHelper.cs" />
+    <Compile Include="module\gui\frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="module\gui\frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="module\gui\frmReadme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="module\gui\frmReadme.Designer.cs">
+      <DependentUpon>frmReadme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="module\gui\frmVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="module\gui\frmVersion.Designer.cs">
+      <DependentUpon>frmVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="module\UpdateModul.cs" />
+    <Compile Include="module\gui\frmError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="module\gui\frmError.Designer.cs">
+      <DependentUpon>frmError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="config\gui\frmMain.de.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="config\gui\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="config\gui\frmPassw.de.resx">
+      <DependentUpon>frmPassw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="config\gui\frmPassw.resx">
+      <DependentUpon>frmPassw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lang\translations.de.resx" />
+    <EmbeddedResource Include="lang\translations.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmBrowser.de.resx">
+      <DependentUpon>frmBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmBrowser.resx">
+      <DependentUpon>frmBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmDownload.de.resx">
+      <DependentUpon>frmDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmDownload.resx">
+      <DependentUpon>frmDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmError.de.resx">
+      <DependentUpon>frmError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmError.pl.resx">
+      <DependentUpon>frmError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmError.resx">
+      <DependentUpon>frmError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmInfo.de.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmReadme.de.resx">
+      <DependentUpon>frmReadme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmReadme.resx">
+      <DependentUpon>frmReadme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmVersion.de.resx">
+      <DependentUpon>frmVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="module\gui\frmVersion.resx">
+      <DependentUpon>frmVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config\App.config" />
+    <None Include="Resources\Security_Shields_Alert_32xLG_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security_Shields_Complete_and_ok_32xLG_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\img\cog_16x16.png" />
+    <Content Include="config\img\rzi_logo.png" />
+    <Content Include="config\img\world_16x16.png" />
+    <None Include="Resources\RZI.ico" />
+    <None Include="Resources\card1.ico" />
+    <Content Include="Resources\nav_left_green.png" />
+    <Content Include="Resources\nav_plain_green.png" />
+    <Content Include="Resources\nav_plain_red.png" />
+    <Content Include="Resources\nav_right_green.png" />
+    <None Include="Resources\Security_Shields_Critical_32xLG_color.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

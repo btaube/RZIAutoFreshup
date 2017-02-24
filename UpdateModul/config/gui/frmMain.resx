@@ -1,0 +1,1955 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GRPBXmain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="TVmain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TVmain.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <metadata name="imgListTV.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>490, 17</value>
+  </metadata>
+  <data name="imgListTV.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADW
+        CQAAAk1TRnQBSQFMAgEBAgEAARgBAQEYAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wUAAfMBnQGQAooBkAG7
+        AfQKAAHxAZIB7QHxKAAB/wF3A04BBgSKAbsGAAH0Av8B7QEHAe8B6wL/AfQkAAH/AXEFVAGBBIoBkAQA
+        AQcB6wHsAf8B7QG8AQcB7AH/AesBEgHvIwABuwGBA1QBdgGBArIBgQOKAbsCAAHxAQcB8QH3AuwCBwFt
+        AewB9wHwAewBvCEAAf8CsgFUAXYHsgOKAfQBAAHyAfcB8AEHAbwB8AG8AQcBvAIHAbwB6wG8IQABuwqy
+        AXYBcAGKAQYBnQIAAfEEBwHvAfcCBwLvAbwiAAG6AbICVAeyAYEBVANOAQcB9wHvAbwBBwG8AQcC8wHv
+        AwcC6wHsIAAFsgHZBbIBgQJUAk4BBwHyAfABBwG8Ae8B8wIAAfMB7wEHAe8BBwHwAW0gAAF2AbIBlQE8
+        AbgD2QOyAXYCVAJOAQcB8wHwArwB9wHzAgAB8wHvAwcB8QFtIAABdgFUAzwBewLZBLIBgQFUAk4B8AG8
+        AQcB8QG8AQcB7wLzAe8CBwG8ApIB9yAAAZYBVAM8AXsD2QKyAXYCVAFOAXcCAAHyAfACvAEHAZIB9wMH
+        Ae8B8CIAAfIBVAM8AbgB2QF7AbgBsgGBA1QBTgHzAQAB8gEHAfEB8ALxAvAB8QHwArwB7AHwIgABnQFU
+        ATwBewLZATwBlQGyAYEDVAGWAf8BAAHzAfEB8wHxAgcC8ALvAbwB8gHvAfEiAAH/AXYBVAE8AXsB0wKy
+        AYEEVAH/AwAB8gG8AfAB/wG8AvEBBwH/Au8B8CQAAf8BugSyAZUDVAGWAf8FAAP/AbwC8gHvAv8B9CcA
+        Af8BCQG6AZUBVAF2AZYB8woAAfMC8AHzJgABQgFNAT4HAAE+AwABKAMAAUADAAEQAwABAQEAAQEFAAGA
+        FwAD/wEAAfABDwH8AT8EAAHAAQcB4AEHBAABgAEDAcABAwQAAYABAQGAAQEGAAGAAQEGAAHAAQMOAAEB
+        AYAGAAEBAYAOAAHAAQMGAAGAAQEEAAGAAQABgAEBBAABgAEBAcABAwQAAcABAwHgAQcEAAHwAQ8B/AE/
+        BAAL
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TVmain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="TVmain.SelectedImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TVmain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 653</value>
+  </data>
+  <data name="TVmain.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TVmain.Name" xml:space="preserve">
+    <value>TVmain</value>
+  </data>
+  <data name="&gt;&gt;TVmain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TVmain.Parent" xml:space="preserve">
+    <value>GRPBXmain</value>
+  </data>
+  <data name="&gt;&gt;TVmain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GRPBXmain.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="GRPBXmain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 23</value>
+  </data>
+  <data name="GRPBXmain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>462, 687</value>
+  </data>
+  <data name="GRPBXmain.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;GRPBXmain.Name" xml:space="preserve">
+    <value>GRPBXmain</value>
+  </data>
+  <data name="&gt;&gt;GRPBXmain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GRPBXmain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GRPBXmain.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="grpboxDetailSecurity.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;BdetailCancelSecurity.Name" xml:space="preserve">
+    <value>BdetailCancelSecurity</value>
+  </data>
+  <data name="&gt;&gt;BdetailCancelSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BdetailCancelSecurity.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;BdetailCancelSecurity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BdetailSaveSecurity.Name" xml:space="preserve">
+    <value>BdetailSaveSecurity</value>
+  </data>
+  <data name="&gt;&gt;BdetailSaveSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BdetailSaveSecurity.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;BdetailSaveSecurity.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPasswordConfirm.Name" xml:space="preserve">
+    <value>txDetailsPasswordConfirm</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPasswordConfirm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPasswordConfirm.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPasswordConfirm.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPassword.Name" xml:space="preserve">
+    <value>txDetailsPassword</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPassword.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPassword.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPasswordConfirm.Name" xml:space="preserve">
+    <value>lDetailsPasswordConfirm</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPasswordConfirm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPasswordConfirm.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPasswordConfirm.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPassword.Name" xml:space="preserve">
+    <value>lDetailsPassword</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPassword.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grpboxDetailSecurity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="grpboxDetailSecurity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 23</value>
+  </data>
+  <data name="grpboxDetailSecurity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 124</value>
+  </data>
+  <data name="grpboxDetailSecurity.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="grpboxDetailSecurity.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailSecurity.Name" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailSecurity.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailSecurity.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="BdetailCancelSecurity.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BdetailCancelSecurity.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BdetailCancelSecurity.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BdetailCancelSecurity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 90</value>
+  </data>
+  <data name="BdetailCancelSecurity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BdetailCancelSecurity.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="BdetailCancelSecurity.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;BdetailCancelSecurity.Name" xml:space="preserve">
+    <value>BdetailCancelSecurity</value>
+  </data>
+  <data name="&gt;&gt;BdetailCancelSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BdetailCancelSecurity.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;BdetailCancelSecurity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BdetailSaveSecurity.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BdetailSaveSecurity.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BdetailSaveSecurity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 90</value>
+  </data>
+  <data name="BdetailSaveSecurity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BdetailSaveSecurity.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="BdetailSaveSecurity.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="&gt;&gt;BdetailSaveSecurity.Name" xml:space="preserve">
+    <value>BdetailSaveSecurity</value>
+  </data>
+  <data name="&gt;&gt;BdetailSaveSecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BdetailSaveSecurity.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;BdetailSaveSecurity.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txDetailsPasswordConfirm.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txDetailsPasswordConfirm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 59</value>
+  </data>
+  <data name="txDetailsPasswordConfirm.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="txDetailsPasswordConfirm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>441, 20</value>
+  </data>
+  <data name="txDetailsPasswordConfirm.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPasswordConfirm.Name" xml:space="preserve">
+    <value>txDetailsPasswordConfirm</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPasswordConfirm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPasswordConfirm.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPasswordConfirm.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txDetailsPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txDetailsPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 28</value>
+  </data>
+  <data name="txDetailsPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="txDetailsPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>441, 20</value>
+  </data>
+  <data name="txDetailsPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPassword.Name" xml:space="preserve">
+    <value>txDetailsPassword</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPassword.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;txDetailsPassword.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lDetailsPasswordConfirm.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lDetailsPasswordConfirm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lDetailsPasswordConfirm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lDetailsPasswordConfirm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 62</value>
+  </data>
+  <data name="lDetailsPasswordConfirm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 13</value>
+  </data>
+  <data name="lDetailsPasswordConfirm.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lDetailsPasswordConfirm.Text" xml:space="preserve">
+    <value>New password (confirm)</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPasswordConfirm.Name" xml:space="preserve">
+    <value>lDetailsPasswordConfirm</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPasswordConfirm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPasswordConfirm.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPasswordConfirm.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lDetailsPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lDetailsPassword.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lDetailsPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lDetailsPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 31</value>
+  </data>
+  <data name="lDetailsPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="lDetailsPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lDetailsPassword.Text" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPassword.Name" xml:space="preserve">
+    <value>lDetailsPassword</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPassword.Parent" xml:space="preserve">
+    <value>grpboxDetailSecurity</value>
+  </data>
+  <data name="&gt;&gt;lDetailsPassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="menuMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>275, 17</value>
+  </metadata>
+  <data name="menuMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1156, 24</value>
+  </data>
+  <data name="menuMain.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="menuMain.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="menuMain.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;menuMain.Name" xml:space="preserve">
+    <value>menuMain</value>
+  </data>
+  <data name="&gt;&gt;menuMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuMain.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="programmToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="programmToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Program</value>
+  </data>
+  <data name="programmToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="beendenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 22</value>
+  </data>
+  <data name="beendenToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 20</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;?</value>
+  </data>
+  <data name="toolStripMenuItem1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="grpboxDetailCommon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;lDetailsCommonCheckDate.Name" xml:space="preserve">
+    <value>lDetailsCommonCheckDate</value>
+  </data>
+  <data name="&gt;&gt;lDetailsCommonCheckDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailsCommonCheckDate.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;lDetailsCommonCheckDate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbCommonLogLevel.Name" xml:space="preserve">
+    <value>cbCommonLogLevel</value>
+  </data>
+  <data name="&gt;&gt;cbCommonLogLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbCommonLogLevel.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;cbCommonLogLevel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lDetailsLastChecked.Name" xml:space="preserve">
+    <value>lDetailsLastChecked</value>
+  </data>
+  <data name="&gt;&gt;lDetailsLastChecked.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailsLastChecked.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;lDetailsLastChecked.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;numDetailsCheckDays.Name" xml:space="preserve">
+    <value>numDetailsCheckDays</value>
+  </data>
+  <data name="&gt;&gt;numDetailsCheckDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numDetailsCheckDays.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;numDetailsCheckDays.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;bDetailCancelCommon.Name" xml:space="preserve">
+    <value>bDetailCancelCommon</value>
+  </data>
+  <data name="&gt;&gt;bDetailCancelCommon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bDetailCancelCommon.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;bDetailCancelCommon.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;bDetailSaveCommon.Name" xml:space="preserve">
+    <value>bDetailSaveCommon</value>
+  </data>
+  <data name="&gt;&gt;bDetailSaveCommon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bDetailSaveCommon.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;bDetailSaveCommon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lDetailCheckDays.Name" xml:space="preserve">
+    <value>lDetailCheckDays</value>
+  </data>
+  <data name="&gt;&gt;lDetailCheckDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailCheckDays.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;lDetailCheckDays.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="grpboxDetailCommon.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="grpboxDetailCommon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 23</value>
+  </data>
+  <data name="grpboxDetailCommon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 176</value>
+  </data>
+  <data name="grpboxDetailCommon.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="grpboxDetailCommon.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailCommon.Name" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailCommon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailCommon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailCommon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lDetailsCommonCheckDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 52</value>
+  </data>
+  <data name="lDetailsCommonCheckDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 13</value>
+  </data>
+  <data name="lDetailsCommonCheckDate.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lDetailsCommonCheckDate.Text" xml:space="preserve">
+    <value>n/a</value>
+  </data>
+  <data name="&gt;&gt;lDetailsCommonCheckDate.Name" xml:space="preserve">
+    <value>lDetailsCommonCheckDate</value>
+  </data>
+  <data name="&gt;&gt;lDetailsCommonCheckDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailsCommonCheckDate.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;lDetailsCommonCheckDate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbCommonLogLevel.Items" xml:space="preserve">
+    <value>INFO</value>
+  </data>
+  <data name="cbCommonLogLevel.Items1" xml:space="preserve">
+    <value>DEBUG</value>
+  </data>
+  <data name="cbCommonLogLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 78</value>
+  </data>
+  <data name="cbCommonLogLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 21</value>
+  </data>
+  <data name="cbCommonLogLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;cbCommonLogLevel.Name" xml:space="preserve">
+    <value>cbCommonLogLevel</value>
+  </data>
+  <data name="&gt;&gt;cbCommonLogLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbCommonLogLevel.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;cbCommonLogLevel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 81</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Log level</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lDetailsLastChecked.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lDetailsLastChecked.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lDetailsLastChecked.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lDetailsLastChecked.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 52</value>
+  </data>
+  <data name="lDetailsLastChecked.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="lDetailsLastChecked.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lDetailsLastChecked.Text" xml:space="preserve">
+    <value>Last checked: </value>
+  </data>
+  <data name="&gt;&gt;lDetailsLastChecked.Name" xml:space="preserve">
+    <value>lDetailsLastChecked</value>
+  </data>
+  <data name="&gt;&gt;lDetailsLastChecked.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailsLastChecked.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;lDetailsLastChecked.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="numDetailsCheckDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 29</value>
+  </data>
+  <data name="numDetailsCheckDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 20</value>
+  </data>
+  <data name="numDetailsCheckDays.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;numDetailsCheckDays.Name" xml:space="preserve">
+    <value>numDetailsCheckDays</value>
+  </data>
+  <data name="&gt;&gt;numDetailsCheckDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numDetailsCheckDays.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;numDetailsCheckDays.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bDetailCancelCommon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="bDetailCancelCommon.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bDetailCancelCommon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bDetailCancelCommon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>582, 140</value>
+  </data>
+  <data name="bDetailCancelCommon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="bDetailCancelCommon.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="bDetailCancelCommon.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;bDetailCancelCommon.Name" xml:space="preserve">
+    <value>bDetailCancelCommon</value>
+  </data>
+  <data name="&gt;&gt;bDetailCancelCommon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bDetailCancelCommon.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;bDetailCancelCommon.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bDetailSaveCommon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="bDetailSaveCommon.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bDetailSaveCommon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bDetailSaveCommon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 140</value>
+  </data>
+  <data name="bDetailSaveCommon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="bDetailSaveCommon.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bDetailSaveCommon.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="&gt;&gt;bDetailSaveCommon.Name" xml:space="preserve">
+    <value>bDetailSaveCommon</value>
+  </data>
+  <data name="&gt;&gt;bDetailSaveCommon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bDetailSaveCommon.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;bDetailSaveCommon.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lDetailCheckDays.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lDetailCheckDays.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lDetailCheckDays.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lDetailCheckDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 31</value>
+  </data>
+  <data name="lDetailCheckDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 13</value>
+  </data>
+  <data name="lDetailCheckDays.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lDetailCheckDays.Text" xml:space="preserve">
+    <value>Days between update checks</value>
+  </data>
+  <data name="&gt;&gt;lDetailCheckDays.Name" xml:space="preserve">
+    <value>lDetailCheckDays</value>
+  </data>
+  <data name="&gt;&gt;lDetailCheckDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailCheckDays.Parent" xml:space="preserve">
+    <value>grpboxDetailCommon</value>
+  </data>
+  <data name="&gt;&gt;lDetailCheckDays.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="grpboxDetailRepository.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;bDetailsCancelRepository.Name" xml:space="preserve">
+    <value>bDetailsCancelRepository</value>
+  </data>
+  <data name="&gt;&gt;bDetailsCancelRepository.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bDetailsCancelRepository.Parent" xml:space="preserve">
+    <value>grpboxDetailRepository</value>
+  </data>
+  <data name="&gt;&gt;bDetailsCancelRepository.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bDetailsSaveRepository.Name" xml:space="preserve">
+    <value>bDetailsSaveRepository</value>
+  </data>
+  <data name="&gt;&gt;bDetailsSaveRepository.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bDetailsSaveRepository.Parent" xml:space="preserve">
+    <value>grpboxDetailRepository</value>
+  </data>
+  <data name="&gt;&gt;bDetailsSaveRepository.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txDetailsRepositoryRepo.Name" xml:space="preserve">
+    <value>txDetailsRepositoryRepo</value>
+  </data>
+  <data name="&gt;&gt;txDetailsRepositoryRepo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txDetailsRepositoryRepo.Parent" xml:space="preserve">
+    <value>grpboxDetailRepository</value>
+  </data>
+  <data name="&gt;&gt;txDetailsRepositoryRepo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lDetailsRepositoryRepo.Name" xml:space="preserve">
+    <value>lDetailsRepositoryRepo</value>
+  </data>
+  <data name="&gt;&gt;lDetailsRepositoryRepo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailsRepositoryRepo.Parent" xml:space="preserve">
+    <value>grpboxDetailRepository</value>
+  </data>
+  <data name="&gt;&gt;lDetailsRepositoryRepo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="grpboxDetailRepository.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="grpboxDetailRepository.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 23</value>
+  </data>
+  <data name="grpboxDetailRepository.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 99</value>
+  </data>
+  <data name="grpboxDetailRepository.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="grpboxDetailRepository.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailRepository.Name" xml:space="preserve">
+    <value>grpboxDetailRepository</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailRepository.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailRepository.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailRepository.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bDetailsCancelRepository.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="bDetailsCancelRepository.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bDetailsCancelRepository.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bDetailsCancelRepository.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 64</value>
+  </data>
+  <data name="bDetailsCancelRepository.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="bDetailsCancelRepository.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="bDetailsCancelRepository.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;bDetailsCancelRepository.Name" xml:space="preserve">
+    <value>bDetailsCancelRepository</value>
+  </data>
+  <data name="&gt;&gt;bDetailsCancelRepository.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bDetailsCancelRepository.Parent" xml:space="preserve">
+    <value>grpboxDetailRepository</value>
+  </data>
+  <data name="&gt;&gt;bDetailsCancelRepository.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bDetailsSaveRepository.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="bDetailsSaveRepository.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bDetailsSaveRepository.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bDetailsSaveRepository.Location" type="System.Drawing.Point, System.Drawing">
+    <value>489, 64</value>
+  </data>
+  <data name="bDetailsSaveRepository.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="bDetailsSaveRepository.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bDetailsSaveRepository.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="&gt;&gt;bDetailsSaveRepository.Name" xml:space="preserve">
+    <value>bDetailsSaveRepository</value>
+  </data>
+  <data name="&gt;&gt;bDetailsSaveRepository.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bDetailsSaveRepository.Parent" xml:space="preserve">
+    <value>grpboxDetailRepository</value>
+  </data>
+  <data name="&gt;&gt;bDetailsSaveRepository.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txDetailsRepositoryRepo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txDetailsRepositoryRepo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 28</value>
+  </data>
+  <data name="txDetailsRepositoryRepo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>441, 20</value>
+  </data>
+  <data name="txDetailsRepositoryRepo.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txDetailsRepositoryRepo.Name" xml:space="preserve">
+    <value>txDetailsRepositoryRepo</value>
+  </data>
+  <data name="&gt;&gt;txDetailsRepositoryRepo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txDetailsRepositoryRepo.Parent" xml:space="preserve">
+    <value>grpboxDetailRepository</value>
+  </data>
+  <data name="&gt;&gt;txDetailsRepositoryRepo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lDetailsRepositoryRepo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lDetailsRepositoryRepo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lDetailsRepositoryRepo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lDetailsRepositoryRepo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 31</value>
+  </data>
+  <data name="lDetailsRepositoryRepo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lDetailsRepositoryRepo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lDetailsRepositoryRepo.Text" xml:space="preserve">
+    <value>Repository url</value>
+  </data>
+  <data name="&gt;&gt;lDetailsRepositoryRepo.Name" xml:space="preserve">
+    <value>lDetailsRepositoryRepo</value>
+  </data>
+  <data name="&gt;&gt;lDetailsRepositoryRepo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDetailsRepositoryRepo.Parent" xml:space="preserve">
+    <value>grpboxDetailRepository</value>
+  </data>
+  <data name="&gt;&gt;lDetailsRepositoryRepo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="grpboxDetailProxy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
+    <value>richTextBox1</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bProxyTest.Name" xml:space="preserve">
+    <value>bProxyTest</value>
+  </data>
+  <data name="&gt;&gt;bProxyTest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bProxyTest.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;bProxyTest.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyBypassServer.Name" xml:space="preserve">
+    <value>chkbxProxyBypassServer</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyBypassServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyBypassServer.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyBypassServer.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txProxyPW.Name" xml:space="preserve">
+    <value>txProxyPW</value>
+  </data>
+  <data name="&gt;&gt;txProxyPW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txProxyPW.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;txProxyPW.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txProxyUser.Name" xml:space="preserve">
+    <value>txProxyUser</value>
+  </data>
+  <data name="&gt;&gt;txProxyUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txProxyUser.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;txProxyUser.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseDefCred.Name" xml:space="preserve">
+    <value>chkbxProxyUseDefCred</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseDefCred.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseDefCred.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseDefCred.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseProxy.Name" xml:space="preserve">
+    <value>chkbxProxyUseProxy</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseProxy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseProxy.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseProxy.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;txProxyPort.Name" xml:space="preserve">
+    <value>txProxyPort</value>
+  </data>
+  <data name="&gt;&gt;txProxyPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txProxyPort.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;txProxyPort.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txProxyServer.Name" xml:space="preserve">
+    <value>txProxyServer</value>
+  </data>
+  <data name="&gt;&gt;txProxyServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txProxyServer.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;txProxyServer.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;bProxyCancel.Name" xml:space="preserve">
+    <value>bProxyCancel</value>
+  </data>
+  <data name="&gt;&gt;bProxyCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bProxyCancel.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;bProxyCancel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;bProxySave.Name" xml:space="preserve">
+    <value>bProxySave</value>
+  </data>
+  <data name="&gt;&gt;bProxySave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bProxySave.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;bProxySave.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="grpboxDetailProxy.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="grpboxDetailProxy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 23</value>
+  </data>
+  <data name="grpboxDetailProxy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 573</value>
+  </data>
+  <data name="grpboxDetailProxy.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="grpboxDetailProxy.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailProxy.Name" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailProxy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailProxy.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpboxDetailProxy.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="richTextBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 225</value>
+  </data>
+  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>643, 313</value>
+  </data>
+  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
+    <value>richTextBox1</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bProxyTest.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="bProxyTest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bProxyTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 544</value>
+  </data>
+  <data name="bProxyTest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 23</value>
+  </data>
+  <data name="bProxyTest.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="bProxyTest.Text" xml:space="preserve">
+    <value>&amp;Test proxy connection</value>
+  </data>
+  <data name="&gt;&gt;bProxyTest.Name" xml:space="preserve">
+    <value>bProxyTest</value>
+  </data>
+  <data name="&gt;&gt;bProxyTest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bProxyTest.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;bProxyTest.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 157</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 13</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Bypass proxy server for LAN</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkbxProxyBypassServer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxProxyBypassServer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxProxyBypassServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 156</value>
+  </data>
+  <data name="chkbxProxyBypassServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="chkbxProxyBypassServer.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyBypassServer.Name" xml:space="preserve">
+    <value>chkbxProxyBypassServer</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyBypassServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyBypassServer.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyBypassServer.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 58</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 133</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 107</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 82</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Use default credentials</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 58</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Proxy server</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txProxyPW.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 130</value>
+  </data>
+  <data name="txProxyPW.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="txProxyPW.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 20</value>
+  </data>
+  <data name="txProxyPW.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;txProxyPW.Name" xml:space="preserve">
+    <value>txProxyPW</value>
+  </data>
+  <data name="&gt;&gt;txProxyPW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txProxyPW.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;txProxyPW.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txProxyUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 104</value>
+  </data>
+  <data name="txProxyUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 20</value>
+  </data>
+  <data name="txProxyUser.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;txProxyUser.Name" xml:space="preserve">
+    <value>txProxyUser</value>
+  </data>
+  <data name="&gt;&gt;txProxyUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txProxyUser.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;txProxyUser.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="chkbxProxyUseDefCred.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxProxyUseDefCred.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxProxyUseDefCred.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 81</value>
+  </data>
+  <data name="chkbxProxyUseDefCred.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="chkbxProxyUseDefCred.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseDefCred.Name" xml:space="preserve">
+    <value>chkbxProxyUseDefCred</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseDefCred.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseDefCred.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseDefCred.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="chkbxProxyUseProxy.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxProxyUseProxy.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxProxyUseProxy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 32</value>
+  </data>
+  <data name="chkbxProxyUseProxy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="chkbxProxyUseProxy.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseProxy.Name" xml:space="preserve">
+    <value>chkbxProxyUseProxy</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseProxy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseProxy.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;chkbxProxyUseProxy.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txProxyPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>582, 55</value>
+  </data>
+  <data name="txProxyPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="txProxyPort.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;txProxyPort.Name" xml:space="preserve">
+    <value>txProxyPort</value>
+  </data>
+  <data name="&gt;&gt;txProxyPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txProxyPort.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;txProxyPort.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txProxyServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 55</value>
+  </data>
+  <data name="txProxyServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 20</value>
+  </data>
+  <data name="txProxyServer.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;txProxyServer.Name" xml:space="preserve">
+    <value>txProxyServer</value>
+  </data>
+  <data name="&gt;&gt;txProxyServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txProxyServer.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;txProxyServer.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="bProxyCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="bProxyCancel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bProxyCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bProxyCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>582, 185</value>
+  </data>
+  <data name="bProxyCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="bProxyCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="bProxyCancel.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;bProxyCancel.Name" xml:space="preserve">
+    <value>bProxyCancel</value>
+  </data>
+  <data name="&gt;&gt;bProxyCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bProxyCancel.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;bProxyCancel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="bProxySave.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="bProxySave.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bProxySave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bProxySave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 185</value>
+  </data>
+  <data name="bProxySave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="bProxySave.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bProxySave.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="&gt;&gt;bProxySave.Name" xml:space="preserve">
+    <value>bProxySave</value>
+  </data>
+  <data name="&gt;&gt;bProxySave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bProxySave.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;bProxySave.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 33</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Use custom proxy</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>grpboxDetailProxy</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1156, 722</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 600</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>RZI Configuration Tool</value>
+  </data>
+  <data name="&gt;&gt;imgListTV.Name" xml:space="preserve">
+    <value>imgListTV</value>
+  </data>
+  <data name="&gt;&gt;imgListTV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;programmToolStripMenuItem.Name" xml:space="preserve">
+    <value>programmToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;programmToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;beendenToolStripMenuItem.Name" xml:space="preserve">
+    <value>beendenToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;beendenToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

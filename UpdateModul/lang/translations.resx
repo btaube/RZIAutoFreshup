@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CVersionLookupHelper_CannotCreateDirectory" xml:space="preserve">
+    <value>A directory has not been created. \r\n Please check your permissions for the following path:</value>
+  </data>
+  <data name="CVersionLookupHelper_CannotLoadXML" xml:space="preserve">
+    <value>The file "VersionLookup.xml" has not been loaded. \r\n Please check your permissions or if the file is already in use by another process.</value>
+  </data>
+  <data name="CVersionLookupHelper_CannotSaveXML" xml:space="preserve">
+    <value>The file "VersionLookup.xml" has not been saved. \r\n Please check your permissions or if the file is already in use by another process.</value>
+  </data>
+  <data name="frmMain_Dlg_LoadTreeview" xml:space="preserve">
+    <value>Error loading the version tree:</value>
+  </data>
+  <data name="frmMain_Dlg_PathToExport_Title" xml:space="preserve">
+    <value>Desired path to encrypted VersionLookup.xml</value>
+  </data>
+  <data name="frmMain_Dlg_TagNotFound" xml:space="preserve">
+    <value>An internal reference for the corresponding xml element have not been found.</value>
+  </data>
+  <data name="frmMain_Dlg_Title_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="frmMain_Dlg_Title_Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="frmMain_Menu_Help" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="frmMain_tvMain_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="frmMain_tvMain_Settings_Common" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="frmMain_tvMain_Settings_Repository" xml:space="preserve">
+    <value>Repository</value>
+  </data>
+  <data name="frmMain_tvMain_Settings_Security" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="MESSAGE_ERROR_DOWNLOAD" xml:space="preserve">
+    <value>Error while downloading file '{0}'! ! Error: '{1}'.</value>
+  </data>
+  <data name="MESSAGE_TEST" xml:space="preserve">
+    <value>Test (deutsch)</value>
+  </data>
+  <data name="program_prompt_description" xml:space="preserve">
+    <value>Please enter the admin password.</value>
+  </data>
+  <data name="program_prompt_title" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="frmMain_Dlg_Password_Retry" xml:space="preserve">
+    <value>The password you entered was incorrect.</value>
+  </data>
+  <data name="frmVersion_BaseVersion1" xml:space="preserve">
+    <value>A new base version is available!</value>
+  </data>
+  <data name="frmVersion_MultipleVersions1" xml:space="preserve">
+    <value>New versions are available!</value>
+  </data>
+  <data name="frmVersion_SingleVersion1" xml:space="preserve">
+    <value>A new version is available!</value>
+  </data>
+  <data name="frmVersion_MultipleBaseVersions1" xml:space="preserve">
+    <value>Various base versions are available!</value>
+  </data>
+  <data name="DOWNLOAD_CANCELLED" xml:space="preserve">
+    <value>Download cancelled!</value>
+  </data>
+  <data name="frmVersion_FurtherMultipleBase1" xml:space="preserve">
+    <value>Alternative versions to download:</value>
+  </data>
+  <data name="CONFIGURATION_FILE_COULD_NOT_LOAD" xml:space="preserve">
+    <value>Configuration file could not be loaded!\r\n{0}</value>
+  </data>
+  <data name="INVALID_VERSION_FILE" xml:space="preserve">
+    <value>Invalid VersionFile! {0} not found!</value>
+  </data>
+  <data name="CVersionLookupHelper_CannotCreateDirectory1" xml:space="preserve">
+    <value>A directory has not been created. \r\n Please check your permissions for the following path:</value>
+  </data>
+  <data name="CVersionLookupHelper_CannotLoadXML1" xml:space="preserve">
+    <value>The file "VersionLookup.xml" has not been loaded. \r\n Please check your permissions or if the file is already in use by another process.</value>
+  </data>
+  <data name="CVersionLookupHelper_CannotSaveXML1" xml:space="preserve">
+    <value>The file "VersionLookup.xml" has not been saved. \r\n Please check your permissions or if the file is already in use by another process.</value>
+  </data>
+  <data name="frmMain_Detail_MinVersion_Default" xml:space="preserve">
+    <value>&lt;optional&gt;</value>
+  </data>
+  <data name="frmMain_Detail_Parents_ColumnHeader" xml:space="preserve">
+    <value>Version path for parental tree paths</value>
+  </data>
+  <data name="frmMain_Dlg_DeleteClient" xml:space="preserve">
+    <value>Do you really want to remove the client "{0}", including all sub entries?</value>
+  </data>
+  <data name="frmMain_Dlg_DeleteLogical" xml:space="preserve">
+    <value>Do you really want to remove the folder "{0}", including all sub entries?</value>
+  </data>
+  <data name="frmMain_Dlg_DeletePhysical" xml:space="preserve">
+    <value>Do you really want to remove the download "{0}", including all sub entries?</value>
+  </data>
+  <data name="frmMain_Dlg_DeleteProduct" xml:space="preserve">
+    <value>Do you really want to remove the product "{0}", including all sub entries?</value>
+  </data>
+  <data name="frmMain_Dlg_EmptyLabel" xml:space="preserve">
+    <value>The name may not be empty.</value>
+  </data>
+  <data name="frmMain_Dlg_EncryptFile_Error" xml:space="preserve">
+    <value>Error providing the xml file: </value>
+  </data>
+  <data name="frmMain_Dlg_EncryptFile_Success" xml:space="preserve">
+    <value>The xml file has been successfully provided. Would you like to open the explorer?</value>
+  </data>
+  <data name="frmMain_Dlg_InvalidEmailFormat" xml:space="preserve">
+    <value>The email format you have entered is invalid.</value>
+  </data>
+  <data name="frmMain_Dlg_InvalidLabel" xml:space="preserve">
+    <value>The name contains invalid characters.</value>
+  </data>
+  <data name="frmMain_Dlg_InvalidURLFormat" xml:space="preserve">
+    <value>The url format you have entered is invalid.</value>
+  </data>
+  <data name="frmMain_Dlg_LoadTreeview1" xml:space="preserve">
+    <value>Error loading the version tree:</value>
+  </data>
+  <data name="frmMain_Dlg_PathToExport_Title1" xml:space="preserve">
+    <value>Desired path to encrypted VersionLookup.xml</value>
+  </data>
+  <data name="frmMain_Dlg_TagNotFound1" xml:space="preserve">
+    <value>An internal reference for the corresponding xml element have not been found.</value>
+  </data>
+  <data name="frmMain_Dlg_Title_Error1" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="frmMain_Dlg_Title_Question1" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="frmMain_Menu_Help1" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="frmMain_tvMain_CreateEntry" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="frmMain_tvMain_SearchCount_Amount" xml:space="preserve">
+    <value>({0} entries found)</value>
+  </data>
+  <data name="frmMain_tvMain_SearchCount_One" xml:space="preserve">
+    <value>(1 entry found)</value>
+  </data>
+  <data name="frmMain_tvMain_SearchCount_Zero" xml:space="preserve">
+    <value>(No entry found)</value>
+  </data>
+  <data name="frmMain_tvMain_SearchPattern" xml:space="preserve">
+    <value>Search pattern...</value>
+  </data>
+  <data name="frmMain_tvMain_Versions" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="frmVersion_BaseVersion2" xml:space="preserve">
+    <value>A new base freshup is available!</value>
+  </data>
+  <data name="frmVersion_FurtherMultipleBase2" xml:space="preserve">
+    <value>Alternative freshups to download:</value>
+  </data>
+  <data name="frmVersion_MultipleBaseVersions2" xml:space="preserve">
+    <value>Various base freshups are available!</value>
+  </data>
+  <data name="frmVersion_MultipleVersions2" xml:space="preserve">
+    <value>New freshups are available!</value>
+  </data>
+  <data name="frmVersion_SingleVersion2" xml:space="preserve">
+    <value>A new freshup is available!</value>
+  </data>
+  <data name="frmDownload_LookingForVersions1" xml:space="preserve">
+    <value>Looking for updates...</value>
+  </data>
+  <data name="frmDownload_LookingForVersions2" xml:space="preserve">
+    <value>Looking for freshups...</value>
+  </data>
+  <data name="frmInfo_NoVersion1" xml:space="preserve">
+    <value>No update available</value>
+  </data>
+  <data name="frmInfo_NoVersion2" xml:space="preserve">
+    <value>No freshup available</value>
+  </data>
+  <data name="frmVersion_Title1" xml:space="preserve">
+    <value>RZI Updater</value>
+  </data>
+  <data name="frmVersion_Title2" xml:space="preserve">
+    <value>CARD/1 Updater</value>
+  </data>
+</root>
