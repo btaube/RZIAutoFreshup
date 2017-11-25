@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
@@ -118,7 +119,7 @@ namespace UpdateModul
         }
 
 
-        public static bool SaveVersionLookupXML()
+        public static bool SaveVersionLookupXML(string filePath)
         {
             CLog.Debug("Enter function 'SaveVersionLookupXML'");
 
@@ -130,7 +131,14 @@ namespace UpdateModul
             }
             try
             {
-                m_xmlDoc.Save(CGlobVars.wrkDir + CGlobVars.VERSION_LOOKUP_XML);
+                if ((filePath != null) && (filePath.Trim() == ""))
+                {
+                    m_xmlDoc.Save(CGlobVars.wrkDir + CGlobVars.VERSION_LOOKUP_XML);
+                } else
+                {
+                    m_xmlDoc.Save(filePath);
+                }
+                
                 CLog.Debug(CGlobVars.VERSION_LOOKUP_XML + " has been successfully saved.");
                 return true;
             }
@@ -462,18 +470,19 @@ namespace UpdateModul
         }
 
 
-        public static string GetFullPathByTagName(string sTagName)
+        public static string GetFullPathByTagName(string sTagName, bool withNewLines)
         {
 
             XmlNode aNode = GetNodeByTagName(sTagName);
-
+            string spacePlaceHolder = "[$space$]";
+            string newLine = (withNewLines ? Environment.NewLine : string.Empty);
             StringBuilder builder = new StringBuilder();
             while (aNode != null)
             {
                 switch (aNode.NodeType)
                 {
                     case XmlNodeType.Attribute:
-                        builder.Insert(0, " » @" + aNode.Name);
+                        builder.Insert(0, newLine + spacePlaceHolder + " » @" + aNode.Name);
                         aNode = ((XmlAttribute)aNode).OwnerElement;
                         break;
                     case XmlNodeType.Element:
@@ -486,17 +495,33 @@ namespace UpdateModul
                         //builder.Insert(0, "/" + aNode.Name + "[" + index + "]");
                         if (aNode.Attributes["name"] != null)
                         {
-                            builder.Insert(0, " » " + aNode.Attributes["name"].Value);
+                            builder.Insert(0, newLine + spacePlaceHolder + " » " + aNode.Attributes["name"].Value);
                         }
                         else
                         {
-                            builder.Insert(0, " » " + aNode.Name);
+                            builder.Insert(0, newLine + spacePlaceHolder + " » " + aNode.Name);
                         }
 
                         aNode = aNode.ParentNode;
                         break;
                     case XmlNodeType.Document:
-                        return builder.ToString();
+                        string raw = builder.ToString();
+                        int numLines = Regex.Matches(raw, Environment.NewLine).Count;
+                        string rep = string.Empty;
+                        for (int i = 0; i< numLines; i++)
+                        {
+                            rep = string.Empty;
+                            for (int irep = 0; irep < i; irep++)
+                            {
+                                rep = rep + "  ";
+                            }
+                            if (raw.IndexOf(spacePlaceHolder) > -1)
+                            {
+                                raw = raw.Substring(0, raw.IndexOf(spacePlaceHolder)) + rep + raw.Substring(raw.IndexOf(spacePlaceHolder) + spacePlaceHolder.Length);
+                            }
+                        }
+
+                        return raw;
                     default:
                         throw new ArgumentException("Only elements and attributes are supported");
                 }

@@ -777,6 +777,16 @@ namespace UpdateModul
                 FolderBrowserDialog objDialog = new FolderBrowserDialog();
                 objDialog.Description = translations.frmMain_Dlg_PathToExport_Title;
                 objDialog.SelectedPath = @"C:\";
+                string path = string.Empty;
+                if (!string.IsNullOrWhiteSpace(CGlobVars.currentlyLoadedFile))
+                {
+                    path = Path.GetDirectoryName(CGlobVars.currentlyLoadedFile);
+                    if (!string.IsNullOrWhiteSpace(path))
+                    {
+                        objDialog.SelectedPath = path;
+                    }
+                }
+                
                 DialogResult objResult = objDialog.ShowDialog();
                 if (objResult == DialogResult.OK)
                 {
@@ -792,8 +802,9 @@ namespace UpdateModul
 
             if (doExport)
             {
-                string path = Path.GetDirectoryName(Application.ExecutablePath);
-                path = path.TrimEnd(Path.DirectorySeparatorChar) + Path.DirectorySeparatorChar + "wrk" + Path.DirectorySeparatorChar;
+
+                //string path = Path.GetDirectoryName(Application.ExecutablePath);
+                //path = path.TrimEnd(Path.DirectorySeparatorChar) + Path.DirectorySeparatorChar + "wrk" + Path.DirectorySeparatorChar;
 
                 string savePath = refinedPath;
                 try
@@ -802,18 +813,12 @@ namespace UpdateModul
                     {
                         File.Delete(savePath + CGlobVars.VERSION_LOOKUP_XML);
                     }
-                    File.Copy(path + CGlobVars.VERSION_LOOKUP_XML, savePath + CGlobVars.VERSION_LOOKUP_XML, true);
 
-                    string finalSource = savePath + CGlobVars.VERSION_LOOKUP_XML;
+                    string finalSource = CGlobVars.currentlyLoadedFile;
                     string finalDest = savePath + CGlobVars.ENCRYPTED_VERSION_LOOKUP_XML;
 
                     EncryptFile(finalSource, finalDest, CGlobVars.PASSWORD_TOKEN, out errorText);
 
-
-                    if (File.Exists(savePath + CGlobVars.VERSION_LOOKUP_XML))
-                    {
-                        File.Delete(savePath + CGlobVars.VERSION_LOOKUP_XML);
-                    }
                     if (savePath != "")
                     {
                         if (MessageBox.Show(translations.frmMain_Dlg_EncryptFile_Success, translations.frmMain_Dlg_Title_Question, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)

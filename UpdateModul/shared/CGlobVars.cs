@@ -28,8 +28,14 @@ namespace UpdateModul.shared
         public static string CurrentGUID = "";
         public static string CurrentLanguage = "";
 
+        public static string Client = "";
+        public static string initDir = "";
+        public static string wrkDir = "";
+
+        public static string currentlyLoadedFile = "";
+
         public static string logLevel;
-        public static string wrkDir;
+        
         public static int VersionDescriptionID = 1; // 1 = rzi; 2 = card/1
 
         public static bool silentModeError = false;

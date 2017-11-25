@@ -40,20 +40,23 @@
             this.tsTVcreateProduct = new System.Windows.Forms.ToolStripMenuItem();
             this.tsTVcreateLogical = new System.Windows.Forms.ToolStripMenuItem();
             this.tsTVcreatePhysical = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsTVcopyPhysical = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.tsTVeditNode = new System.Windows.Forms.ToolStripMenuItem();
             this.tsTVdeleteNode = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsTVExpandBranch = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsTVCollapseBranch = new System.Windows.Forms.ToolStripMenuItem();
             this.imgListTV = new System.Windows.Forms.ImageList(this.components);
-            this.GRPBXdetail = new System.Windows.Forms.GroupBox();
             this.lbDetailParents = new System.Windows.Forms.Label();
             this.bProductsDelIcon = new System.Windows.Forms.Button();
             this.bProductsChooseItem = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txSupportEmail = new System.Windows.Forms.TextBox();
             this.imgProductIcon = new System.Windows.Forms.PictureBox();
             this.txDisplayGuid = new System.Windows.Forms.TextBox();
+            this.ctxGUID = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editGUIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BdetailCancel = new System.Windows.Forms.Button();
             this.LVdetailParents = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -75,6 +78,8 @@
             this.loadVersionLookupxmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.provideVersionLookupxmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.loadEncryptedVersionLookupxmlcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
             this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.expandTreeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,18 +96,26 @@
             this.picLegendPhysical = new System.Windows.Forms.PictureBox();
             this.picLegendClient = new System.Windows.Forms.PictureBox();
             this.timerSearch = new System.Windows.Forms.Timer(this.components);
-            this.loadEncryptedVersionLookupxmlcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.grpbxDetailHint = new System.Windows.Forms.GroupBox();
+            this.pnlDetails = new System.Windows.Forms.Panel();
+            this.lblGuidAlreadyInUse = new System.Windows.Forms.Label();
+            this.lblParentVersion = new System.Windows.Forms.Label();
+            this.lblGuidError = new System.Windows.Forms.Label();
+            this.txSupportEmail = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.GRPBXmain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSearchCancel)).BeginInit();
             this.contextTV.SuspendLayout();
-            this.GRPBXdetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgProductIcon)).BeginInit();
+            this.ctxGUID.SuspendLayout();
             this.menuMain.SuspendLayout();
             this.grpbxLegend.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLegendProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLegendLogical)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLegendPhysical)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLegendClient)).BeginInit();
+            this.grpbxDetailHint.SuspendLayout();
+            this.pnlDetails.SuspendLayout();
             this.SuspendLayout();
             // 
             // GRPBXmain
@@ -161,10 +174,13 @@
             this.tsTVcreateProduct,
             this.tsTVcreateLogical,
             this.tsTVcreatePhysical,
+            this.tsTVcopyPhysical,
             this.toolStripMenuItem3,
             this.tsTVeditNode,
             this.tsTVdeleteNode,
-            this.toolStripMenuItem4});
+            this.toolStripMenuItem4,
+            this.tsTVExpandBranch,
+            this.tsTVCollapseBranch});
             this.contextTV.Name = "contextTV";
             resources.ApplyResources(this.contextTV, "contextTV");
             this.contextTV.Opening += new System.ComponentModel.CancelEventHandler(this.contextTV_Opening);
@@ -193,6 +209,12 @@
             this.tsTVcreatePhysical.Name = "tsTVcreatePhysical";
             this.tsTVcreatePhysical.Click += new System.EventHandler(this.tsTVcreatePhysical_Click);
             // 
+            // tsTVcopyPhysical
+            // 
+            resources.ApplyResources(this.tsTVcopyPhysical, "tsTVcopyPhysical");
+            this.tsTVcopyPhysical.Name = "tsTVcopyPhysical";
+            this.tsTVcopyPhysical.Click += new System.EventHandler(this.tsTVcopyPhysical_Click);
+            // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
@@ -215,6 +237,18 @@
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             resources.ApplyResources(this.toolStripMenuItem4, "toolStripMenuItem4");
             // 
+            // tsTVExpandBranch
+            // 
+            resources.ApplyResources(this.tsTVExpandBranch, "tsTVExpandBranch");
+            this.tsTVExpandBranch.Name = "tsTVExpandBranch";
+            this.tsTVExpandBranch.Click += new System.EventHandler(this.tsTVExpandBranch_Click);
+            // 
+            // tsTVCollapseBranch
+            // 
+            resources.ApplyResources(this.tsTVCollapseBranch, "tsTVCollapseBranch");
+            this.tsTVCollapseBranch.Name = "tsTVCollapseBranch";
+            this.tsTVCollapseBranch.Click += new System.EventHandler(this.tsTVCollapseBranch_Click);
+            // 
             // imgListTV
             // 
             this.imgListTV.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgListTV.ImageStream")));
@@ -231,35 +265,6 @@
             this.imgListTV.Images.SetKeyName(9, "search_form_16x16.png");
             this.imgListTV.Images.SetKeyName(10, "search_folder_16x16.png");
             this.imgListTV.Images.SetKeyName(11, "search_disc_16x16.png");
-            // 
-            // GRPBXdetail
-            // 
-            resources.ApplyResources(this.GRPBXdetail, "GRPBXdetail");
-            this.GRPBXdetail.Controls.Add(this.lbDetailParents);
-            this.GRPBXdetail.Controls.Add(this.bProductsDelIcon);
-            this.GRPBXdetail.Controls.Add(this.bProductsChooseItem);
-            this.GRPBXdetail.Controls.Add(this.label2);
-            this.GRPBXdetail.Controls.Add(this.label1);
-            this.GRPBXdetail.Controls.Add(this.txSupportEmail);
-            this.GRPBXdetail.Controls.Add(this.imgProductIcon);
-            this.GRPBXdetail.Controls.Add(this.txDisplayGuid);
-            this.GRPBXdetail.Controls.Add(this.BdetailCancel);
-            this.GRPBXdetail.Controls.Add(this.LVdetailParents);
-            this.GRPBXdetail.Controls.Add(this.BdetailSave);
-            this.GRPBXdetail.Controls.Add(this.Lvguid);
-            this.GRPBXdetail.Controls.Add(this.LurlInstFile);
-            this.GRPBXdetail.Controls.Add(this.LurlRN);
-            this.GRPBXdetail.Controls.Add(this.Lvprerequisite);
-            this.GRPBXdetail.Controls.Add(this.Lvparents);
-            this.GRPBXdetail.Controls.Add(this.TXurlInstFile);
-            this.GRPBXdetail.Controls.Add(this.TXurlRN);
-            this.GRPBXdetail.Controls.Add(this.CBprerequisites);
-            this.GRPBXdetail.Controls.Add(this.TXvnameExt);
-            this.GRPBXdetail.Controls.Add(this.TXvnameInt);
-            this.GRPBXdetail.Controls.Add(this.LvnameExt);
-            this.GRPBXdetail.Controls.Add(this.LvnameInt);
-            this.GRPBXdetail.Name = "GRPBXdetail";
-            this.GRPBXdetail.TabStop = false;
             // 
             // lbDetailParents
             // 
@@ -292,13 +297,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // txSupportEmail
-            // 
-            resources.ApplyResources(this.txSupportEmail, "txSupportEmail");
-            this.txSupportEmail.Name = "txSupportEmail";
-            this.txSupportEmail.TextChanged += new System.EventHandler(this.txSupportEmail_TextChanged);
-            this.txSupportEmail.Leave += new System.EventHandler(this.txProductTitle_Leave);
-            // 
             // imgProductIcon
             // 
             resources.ApplyResources(this.imgProductIcon, "imgProductIcon");
@@ -309,8 +307,23 @@
             // txDisplayGuid
             // 
             resources.ApplyResources(this.txDisplayGuid, "txDisplayGuid");
+            this.txDisplayGuid.ContextMenuStrip = this.ctxGUID;
             this.txDisplayGuid.Name = "txDisplayGuid";
             this.txDisplayGuid.ReadOnly = true;
+            this.txDisplayGuid.TextChanged += new System.EventHandler(this.txDisplayGuid_TextChanged);
+            // 
+            // ctxGUID
+            // 
+            this.ctxGUID.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editGUIDToolStripMenuItem});
+            this.ctxGUID.Name = "ctxGUID";
+            resources.ApplyResources(this.ctxGUID, "ctxGUID");
+            // 
+            // editGUIDToolStripMenuItem
+            // 
+            this.editGUIDToolStripMenuItem.Name = "editGUIDToolStripMenuItem";
+            resources.ApplyResources(this.editGUIDToolStripMenuItem, "editGUIDToolStripMenuItem");
+            this.editGUIDToolStripMenuItem.Click += new System.EventHandler(this.editGUIDToolStripMenuItem_Click);
             // 
             // BdetailCancel
             // 
@@ -436,8 +449,9 @@
             this.loadVersionLookupxmlToolStripMenuItem,
             this.provideVersionLookupxmlToolStripMenuItem,
             this.toolStripMenuItem2,
-            this.beendenToolStripMenuItem,
-            this.loadEncryptedVersionLookupxmlcToolStripMenuItem});
+            this.loadEncryptedVersionLookupxmlcToolStripMenuItem,
+            this.toolStripMenuItem5,
+            this.beendenToolStripMenuItem});
             this.programmToolStripMenuItem.Name = "programmToolStripMenuItem";
             resources.ApplyResources(this.programmToolStripMenuItem, "programmToolStripMenuItem");
             // 
@@ -457,6 +471,17 @@
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
+            // 
+            // loadEncryptedVersionLookupxmlcToolStripMenuItem
+            // 
+            this.loadEncryptedVersionLookupxmlcToolStripMenuItem.Name = "loadEncryptedVersionLookupxmlcToolStripMenuItem";
+            resources.ApplyResources(this.loadEncryptedVersionLookupxmlcToolStripMenuItem, "loadEncryptedVersionLookupxmlcToolStripMenuItem");
+            this.loadEncryptedVersionLookupxmlcToolStripMenuItem.Click += new System.EventHandler(this.loadEncryptedVersionLookupxmlcToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            resources.ApplyResources(this.toolStripMenuItem5, "toolStripMenuItem5");
             // 
             // beendenToolStripMenuItem
             // 
@@ -559,19 +584,74 @@
             this.timerSearch.Interval = 1500;
             this.timerSearch.Tick += new System.EventHandler(this.timerSearch_Tick);
             // 
-            // loadEncryptedVersionLookupxmlcToolStripMenuItem
+            // grpbxDetailHint
             // 
-            this.loadEncryptedVersionLookupxmlcToolStripMenuItem.Name = "loadEncryptedVersionLookupxmlcToolStripMenuItem";
-            resources.ApplyResources(this.loadEncryptedVersionLookupxmlcToolStripMenuItem, "loadEncryptedVersionLookupxmlcToolStripMenuItem");
-            this.loadEncryptedVersionLookupxmlcToolStripMenuItem.Click += new System.EventHandler(this.loadEncryptedVersionLookupxmlcToolStripMenuItem_Click);
+            resources.ApplyResources(this.grpbxDetailHint, "grpbxDetailHint");
+            this.grpbxDetailHint.Controls.Add(this.pnlDetails);
+            this.grpbxDetailHint.Name = "grpbxDetailHint";
+            this.grpbxDetailHint.TabStop = false;
+            // 
+            // pnlDetails
+            // 
+            this.pnlDetails.Controls.Add(this.lblGuidAlreadyInUse);
+            this.pnlDetails.Controls.Add(this.lblParentVersion);
+            this.pnlDetails.Controls.Add(this.lblGuidError);
+            this.pnlDetails.Controls.Add(this.txSupportEmail);
+            this.pnlDetails.Controls.Add(this.lbDetailParents);
+            this.pnlDetails.Controls.Add(this.LvnameInt);
+            this.pnlDetails.Controls.Add(this.bProductsDelIcon);
+            this.pnlDetails.Controls.Add(this.LvnameExt);
+            this.pnlDetails.Controls.Add(this.bProductsChooseItem);
+            this.pnlDetails.Controls.Add(this.TXvnameInt);
+            this.pnlDetails.Controls.Add(this.label2);
+            this.pnlDetails.Controls.Add(this.TXvnameExt);
+            this.pnlDetails.Controls.Add(this.label1);
+            this.pnlDetails.Controls.Add(this.CBprerequisites);
+            this.pnlDetails.Controls.Add(this.TXurlRN);
+            this.pnlDetails.Controls.Add(this.imgProductIcon);
+            this.pnlDetails.Controls.Add(this.TXurlInstFile);
+            this.pnlDetails.Controls.Add(this.txDisplayGuid);
+            this.pnlDetails.Controls.Add(this.Lvparents);
+            this.pnlDetails.Controls.Add(this.BdetailCancel);
+            this.pnlDetails.Controls.Add(this.Lvprerequisite);
+            this.pnlDetails.Controls.Add(this.LVdetailParents);
+            this.pnlDetails.Controls.Add(this.LurlRN);
+            this.pnlDetails.Controls.Add(this.BdetailSave);
+            this.pnlDetails.Controls.Add(this.LurlInstFile);
+            this.pnlDetails.Controls.Add(this.Lvguid);
+            resources.ApplyResources(this.pnlDetails, "pnlDetails");
+            this.pnlDetails.Name = "pnlDetails";
+            // 
+            // lblGuidAlreadyInUse
+            // 
+            resources.ApplyResources(this.lblGuidAlreadyInUse, "lblGuidAlreadyInUse");
+            this.lblGuidAlreadyInUse.ForeColor = System.Drawing.Color.Red;
+            this.lblGuidAlreadyInUse.Name = "lblGuidAlreadyInUse";
+            // 
+            // lblParentVersion
+            // 
+            resources.ApplyResources(this.lblParentVersion, "lblParentVersion");
+            this.lblParentVersion.ForeColor = System.Drawing.Color.Red;
+            this.lblParentVersion.Name = "lblParentVersion";
+            // 
+            // lblGuidError
+            // 
+            resources.ApplyResources(this.lblGuidError, "lblGuidError");
+            this.lblGuidError.ForeColor = System.Drawing.Color.Red;
+            this.lblGuidError.Name = "lblGuidError";
+            // 
+            // txSupportEmail
+            // 
+            resources.ApplyResources(this.txSupportEmail, "txSupportEmail");
+            this.txSupportEmail.Name = "txSupportEmail";
             // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.grpbxDetailHint);
             this.Controls.Add(this.grpbxLegend);
             this.Controls.Add(this.menuMain);
-            this.Controls.Add(this.GRPBXdetail);
             this.Controls.Add(this.GRPBXmain);
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuMain;
@@ -582,9 +662,8 @@
             this.GRPBXmain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSearchCancel)).EndInit();
             this.contextTV.ResumeLayout(false);
-            this.GRPBXdetail.ResumeLayout(false);
-            this.GRPBXdetail.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgProductIcon)).EndInit();
+            this.ctxGUID.ResumeLayout(false);
             this.menuMain.ResumeLayout(false);
             this.menuMain.PerformLayout();
             this.grpbxLegend.ResumeLayout(false);
@@ -593,6 +672,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLegendLogical)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLegendPhysical)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLegendClient)).EndInit();
+            this.grpbxDetailHint.ResumeLayout(false);
+            this.pnlDetails.ResumeLayout(false);
+            this.pnlDetails.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -601,7 +683,6 @@
         #endregion
         private System.Windows.Forms.GroupBox GRPBXmain;
         private System.Windows.Forms.TreeView TVmain;
-        private System.Windows.Forms.GroupBox GRPBXdetail;
         private System.Windows.Forms.Button BdetailSave;
         private System.Windows.Forms.Label Lvguid;
         private System.Windows.Forms.Label LurlInstFile;
@@ -657,10 +738,22 @@
         private System.Windows.Forms.Button bProductsChooseItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txSupportEmail;
         private System.Windows.Forms.PictureBox imgProductIcon;
         private System.Windows.Forms.Label lbDetailParents;
         private System.Windows.Forms.ToolStripMenuItem loadEncryptedVersionLookupxmlcToolStripMenuItem;
+        private System.Windows.Forms.GroupBox grpbxDetailHint;
+        private System.Windows.Forms.Panel pnlDetails;
+        private System.Windows.Forms.TextBox txSupportEmail;
+        private System.Windows.Forms.ToolStripMenuItem tsTVcopyPhysical;
+        private System.Windows.Forms.ToolStripMenuItem tsTVExpandBranch;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolStripMenuItem tsTVCollapseBranch;
+        private System.Windows.Forms.ContextMenuStrip ctxGUID;
+        private System.Windows.Forms.ToolStripMenuItem editGUIDToolStripMenuItem;
+        private System.Windows.Forms.Label lblGuidError;
+        private System.Windows.Forms.Label lblParentVersion;
+        private System.Windows.Forms.Label lblGuidAlreadyInUse;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
     }
 }
 
