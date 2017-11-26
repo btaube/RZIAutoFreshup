@@ -229,13 +229,13 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <metadata name="contextTV.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>500, 17</value>
+    <value>496, 17</value>
   </metadata>
   <data name="tsTVcreateClient.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="tsTVcreateClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 22</value>
+    <value>271, 22</value>
   </data>
   <data name="tsTVcreateClient.Text" xml:space="preserve">
     <value>Add new client</value>
@@ -244,7 +244,7 @@
     <value>False</value>
   </data>
   <data name="tsTVcreateProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 22</value>
+    <value>271, 22</value>
   </data>
   <data name="tsTVcreateProduct.Text" xml:space="preserve">
     <value>Add new product</value>
@@ -253,7 +253,7 @@
     <value>False</value>
   </data>
   <data name="tsTVcreateLogical.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 22</value>
+    <value>271, 22</value>
   </data>
   <data name="tsTVcreateLogical.Text" xml:space="preserve">
     <value>Add new folder</value>
@@ -262,7 +262,7 @@
     <value>False</value>
   </data>
   <data name="tsTVcreatePhysical.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 22</value>
+    <value>271, 22</value>
   </data>
   <data name="tsTVcreatePhysical.Text" xml:space="preserve">
     <value>Add empty download</value>
@@ -271,19 +271,19 @@
     <value>False</value>
   </data>
   <data name="tsTVcopyPhysical.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 22</value>
+    <value>271, 22</value>
   </data>
   <data name="tsTVcopyPhysical.Text" xml:space="preserve">
     <value>Copy current download</value>
   </data>
   <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 6</value>
+    <value>268, 6</value>
   </data>
   <data name="tsTVeditNode.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="tsTVeditNode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 22</value>
+    <value>271, 22</value>
   </data>
   <data name="tsTVeditNode.Text" xml:space="preserve">
     <value>Edit</value>
@@ -291,20 +291,26 @@
   <data name="tsTVdeleteNode.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="tsTVdeleteNode.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Del</value>
+  </data>
   <data name="tsTVdeleteNode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 22</value>
+    <value>271, 22</value>
   </data>
   <data name="tsTVdeleteNode.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
   <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 6</value>
+    <value>268, 6</value>
   </data>
   <data name="tsTVExpandBranch.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="tsTVExpandBranch.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>PageDown</value>
+  </data>
   <data name="tsTVExpandBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 22</value>
+    <value>271, 22</value>
   </data>
   <data name="tsTVExpandBranch.Text" xml:space="preserve">
     <value>Expand branch from here</value>
@@ -312,14 +318,32 @@
   <data name="tsTVCollapseBranch.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="tsTVCollapseBranch.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>PageUp</value>
+  </data>
   <data name="tsTVCollapseBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 22</value>
+    <value>271, 22</value>
   </data>
   <data name="tsTVCollapseBranch.Text" xml:space="preserve">
     <value>Collapse branch from here</value>
   </data>
+  <data name="toolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 6</value>
+  </data>
+  <data name="tsTVhideParentDownloads.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tsTVhideParentDownloads.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>F4</value>
+  </data>
+  <data name="tsTVhideParentDownloads.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 22</value>
+  </data>
+  <data name="tsTVhideParentDownloads.Text" xml:space="preserve">
+    <value>Hide parent downloads</value>
+  </data>
   <data name="contextTV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 214</value>
+    <value>272, 264</value>
   </data>
   <data name="&gt;&gt;contextTV.Name" xml:space="preserve">
     <value>contextTV</value>
@@ -338,7 +362,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAo
-        FgAAAk1TRnQBSQFMAgEBDAEAATQBAwE0AQMBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        FgAAAk1TRnQBSQFMAgEBDAEAAYQBAwGEAQMBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAAUADAAEBAQABCAYAARAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -1149,6 +1173,93 @@
   <metadata name="menuMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>275, 17</value>
   </metadata>
+  <data name="loadVersionLookupxmlToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 22</value>
+  </data>
+  <data name="loadVersionLookupxmlToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Load VersionLookup.xml</value>
+  </data>
+  <data name="provideVersionLookupxmlcToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 22</value>
+  </data>
+  <data name="provideVersionLookupxmlcToolStripMenuItem.Text" xml:space="preserve">
+    <value>Provide VersionLookup.xmlc</value>
+  </data>
+  <data name="toolStripMenuItem7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 6</value>
+  </data>
+  <data name="testEncryptedVersionLookupxmlcToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 22</value>
+  </data>
+  <data name="testEncryptedVersionLookupxmlcToolStripMenuItem.Text" xml:space="preserve">
+    <value>Test encrypted VersionLookup.xmlc</value>
+  </data>
+  <data name="toolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 6</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 22</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="programToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="programToolStripMenuItem.Text" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="collapseTreeToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="collapseTreeToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Expand tree</value>
+  </data>
+  <data name="collapseTreeToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="collapseTreeToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Collapse tree</value>
+  </data>
+  <data name="reloadTreeToolStripMenuItem1.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>F5</value>
+  </data>
+  <data name="reloadTreeToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="reloadTreeToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Reload tree</value>
+  </data>
+  <data name="expandTreeToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="expandTreeToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="menuMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1157, 24</value>
+  </data>
+  <data name="menuMain.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="menuMain.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuMain.Name" xml:space="preserve">
+    <value>menuMain</value>
+  </data>
+  <data name="&gt;&gt;menuMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuMain.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="loadVersionLookupxmlToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 22</value>
   </data>
@@ -1214,30 +1325,6 @@
   </data>
   <data name="toolStripMenuItem1.Text" xml:space="preserve">
     <value>&amp;?</value>
-  </data>
-  <data name="menuMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1157, 24</value>
-  </data>
-  <data name="menuMain.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="menuMain.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuMain.Name" xml:space="preserve">
-    <value>menuMain</value>
-  </data>
-  <data name="&gt;&gt;menuMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuMain.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuMain.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="grpbxLegend.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -1740,6 +1827,18 @@
   <data name="&gt;&gt;tsTVCollapseBranch.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;toolStripMenuItem6.Name" xml:space="preserve">
+    <value>toolStripMenuItem6</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsTVhideParentDownloads.Name" xml:space="preserve">
+    <value>tsTVhideParentDownloads</value>
+  </data>
+  <data name="&gt;&gt;tsTVhideParentDownloads.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;imgListTV.Name" xml:space="preserve">
     <value>imgListTV</value>
   </data>
@@ -1757,6 +1856,72 @@
   </data>
   <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;programToolStripMenuItem.Name" xml:space="preserve">
+    <value>programToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;programToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loadVersionLookupxmlToolStripMenuItem1.Name" xml:space="preserve">
+    <value>loadVersionLookupxmlToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;loadVersionLookupxmlToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;provideVersionLookupxmlcToolStripMenuItem.Name" xml:space="preserve">
+    <value>provideVersionLookupxmlcToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;provideVersionLookupxmlcToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem7.Name" xml:space="preserve">
+    <value>toolStripMenuItem7</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;testEncryptedVersionLookupxmlcToolStripMenuItem.Name" xml:space="preserve">
+    <value>testEncryptedVersionLookupxmlcToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;testEncryptedVersionLookupxmlcToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem8.Name" xml:space="preserve">
+    <value>toolStripMenuItem8</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
+    <value>exitToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;expandTreeToolStripMenuItem1.Name" xml:space="preserve">
+    <value>expandTreeToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;expandTreeToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;collapseTreeToolStripMenuItem1.Name" xml:space="preserve">
+    <value>collapseTreeToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;collapseTreeToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;collapseTreeToolStripMenuItem2.Name" xml:space="preserve">
+    <value>collapseTreeToolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;collapseTreeToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;reloadTreeToolStripMenuItem1.Name" xml:space="preserve">
+    <value>reloadTreeToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;reloadTreeToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;programmToolStripMenuItem.Name" xml:space="preserve">
     <value>programmToolStripMenuItem</value>

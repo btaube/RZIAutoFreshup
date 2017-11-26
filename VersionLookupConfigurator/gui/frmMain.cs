@@ -536,8 +536,11 @@ namespace UpdateModul
 
         private void frmMain_Shown(object sender, EventArgs e)
         {
-            CGlobVars.initDir = SetInitDir("");
-            CGlobVars.wrkDir = SetWorkDir(CGlobVars.initDir);
+            if (string.IsNullOrWhiteSpace(CGlobVars.currentlyLoadedFile))
+            {
+                CGlobVars.initDir = SetInitDir("");
+                CGlobVars.wrkDir = SetWorkDir(CGlobVars.initDir);
+            }
             LoadMainFrm(CGlobVars.currentlyLoadedFile);
         }
 
@@ -689,18 +692,7 @@ namespace UpdateModul
             BdetailSave.Enabled = false;
             BdetailCancel.Enabled = false;
 
-            // Create wrk directory if not exists
-            if (!Directory.Exists(CGlobVars.wrkDir))
-            {
-                try
-                {
-                    Directory.CreateDirectory(CGlobVars.wrkDir);
-                }
-                catch (Exception ex)
-                {
-                    return CReturnCodes.CANNOT_CREATE_WORK_DIRECTORY;
-                }
-            }
+
 
 
             // load xml file
@@ -712,6 +704,8 @@ namespace UpdateModul
                                     InitFile + Environment.NewLine + Environment.NewLine +
                                     "Es wird nun auf das Standard-Verzeichnis zurückgegriffen.", "Pfad ungültig", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     string ErrorText = string.Empty;
+                    CGlobVars.initDir = SetInitDir("");
+                    CGlobVars.wrkDir = SetWorkDir(CGlobVars.initDir);
                     CVersionLookupHelper.LoadVersionLookupXML(CGlobVars.wrkDir + CGlobVars.VERSION_LOOKUP_XML, true);
                     InitFile = CGlobVars.wrkDir + CGlobVars.VERSION_LOOKUP_XML;
                 }
@@ -731,6 +725,19 @@ namespace UpdateModul
             }
             else
             {
+                // Create wrk directory if not exists
+                if (!Directory.Exists(CGlobVars.wrkDir))
+                {
+                    try
+                    {
+                        Directory.CreateDirectory(CGlobVars.wrkDir);
+                    }
+                    catch (Exception ex)
+                    {
+                        return CReturnCodes.CANNOT_CREATE_WORK_DIRECTORY;
+                    }
+                }
+
                 string ErrorText = string.Empty;
                 CVersionLookupHelper.LoadVersionLookupXML(CGlobVars.wrkDir + CGlobVars.VERSION_LOOKUP_XML, true);
                 CGlobVars.currentlyLoadedFile = CGlobVars.wrkDir + CGlobVars.VERSION_LOOKUP_XML;
@@ -1114,7 +1121,7 @@ namespace UpdateModul
             }
         }
 
-        private void configureTVmainContextMenu(bool bShowClient, bool bShowProduct, bool bShowLogical, bool bShowPhysical, bool bShowEdit, bool bShowDelete, bool bShowCopyPhysical)
+        private void configureTVmainContextMenu(bool bShowClient, bool bShowProduct, bool bShowLogical, bool bShowPhysical, bool bShowEdit, bool bShowDelete, bool bShowCopyPhysical, bool bShowHideDownloads)
         {
             tsTVcreateClient.Image = imgListTV.Images[0];
             tsTVcreateProduct.Image = imgListTV.Images[1];
@@ -1133,7 +1140,7 @@ namespace UpdateModul
             tsTVdeleteNode.Enabled = bShowDelete;
             tsTVExpandBranch.Enabled = bShowClient || bShowProduct || bShowLogical || bShowPhysical || bShowEdit || bShowDelete;
             tsTVCollapseBranch.Enabled = bShowClient || bShowProduct || bShowLogical || bShowPhysical || bShowEdit || bShowDelete;
-
+            tsTVhideParentDownloads.Enabled = bShowHideDownloads;
         }
 
 
@@ -1187,11 +1194,11 @@ namespace UpdateModul
             }
             if ("Versions".Equals(aNode.Name))  // Versions
             {
-                configureTVmainContextMenu(true, false, false, false, false, false, false);
+                configureTVmainContextMenu(true, false, false, false, false, false, false, false);
             }
             if ((aNode.Attributes != null) && (aNode.Attributes["nodetype"] != null) && ("client".Equals(aNode.Attributes["nodetype"].Value)))    // Clients
             {
-                configureTVmainContextMenu(false, true, false, false, true, true, false);
+                configureTVmainContextMenu(false, true, false, false, true, true, false, false);
             }
             if ((aNode.Attributes != null) && (aNode.Attributes["nodetype"] != null) && (("product".Equals(aNode.Attributes["nodetype"].Value)) || ("logical".Equals(aNode.Attributes["nodetype"].Value))))                           // Logical
             {
@@ -1217,22 +1224,22 @@ namespace UpdateModul
                     {
                         if (bFoundPhysical)
                         {
-                            configureTVmainContextMenu(false, false, false, false, true, true, false);
+                            configureTVmainContextMenu(false, false, false, false, true, true, false, false);
                         }
                         else
                         {
-                            configureTVmainContextMenu(false, false, true, false, true, true, false);
+                            configureTVmainContextMenu(false, false, true, false, true, true, false, false);
                         }
                     }
                     else
                     {
                         if (bFoundPhysical)
                         {
-                            configureTVmainContextMenu(false, false, false, false, true, true, false);
+                            configureTVmainContextMenu(false, false, false, false, true, true, false, false);
                         }
                         else
                         {
-                            configureTVmainContextMenu(false, false, true, false, true, true, false);
+                            configureTVmainContextMenu(false, false, true, false, true, true, false, false);
                         }
                     }
                 }
@@ -1240,24 +1247,39 @@ namespace UpdateModul
                 {
                     if ("product".Equals(aNode.Attributes["nodetype"].Value))
                     {
-                        configureTVmainContextMenu(false, false, true, true, true, true, false);
+                        configureTVmainContextMenu(false, false, true, true, true, true, false, false);
                     }
                     else
                     {
-                        configureTVmainContextMenu(false, false, true, true, true, true, false);
+                        configureTVmainContextMenu(false, false, true, true, true, true, false, false);
                     }
                 }
 
             }
             if ((aNode.Attributes != null) && (aNode.Attributes["nodetype"] != null) && ("physical".Equals(aNode.Attributes["nodetype"].Value)))                            // Physical
             {
-                if (e.Node.Nodes.Count < 1)
+                XmlNode parent = aNode.ParentNode;
+                if ((parent != null) && (parent.Attributes["nodetype"] != null) && ("physical".Equals(parent.Attributes["nodetype"].Value)))
                 {
-                    configureTVmainContextMenu(false, false, false, true, false, true, true);
+                    if (e.Node.Nodes.Count < 1)
+                    {
+                        configureTVmainContextMenu(false, false, false, true, false, true, true, true);
+                    }
+                    else
+                    {
+                        configureTVmainContextMenu(false, false, false, false, false, true, false, true);
+                    }
                 }
                 else
                 {
-                    configureTVmainContextMenu(false, false, false, false, false, true, false);
+                    if (e.Node.Nodes.Count < 1)
+                    {
+                        configureTVmainContextMenu(false, false, false, true, false, true, true, false);
+                    }
+                    else
+                    {
+                        configureTVmainContextMenu(false, false, false, false, false, true, false, false);
+                    }
                 }
             }
 
@@ -1452,7 +1474,7 @@ namespace UpdateModul
                     sQuestion = string.Format(translations.frmMain_Dlg_DeletePhysical, TVmain.SelectedNode.Text);
                 }
 
-                if (MessageBox.Show(sQuestion, translations.frmMain_Dlg_Title_Question, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(sQuestion, translations.frmMain_Dlg_Title_Question, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
                     aReferenceNode.ParentNode.RemoveChild(aReferenceNode);
                     SaveFile(CGlobVars.currentlyLoadedFile);
@@ -1926,14 +1948,14 @@ namespace UpdateModul
             string path = string.Empty;
             if (!string.IsNullOrWhiteSpace(CGlobVars.currentlyLoadedFile))
             {
-                path = Path.GetFullPath(CGlobVars.currentlyLoadedFile);
+                path = Path.GetDirectoryName(CGlobVars.currentlyLoadedFile);
                 if (!string.IsNullOrWhiteSpace(path))
                 {
                     ofdVersionLookup.InitialDirectory = path;
                 }
             }
             // image filters
-            ofdVersionLookup.Filter = "XML Files(*.xml;)|*.xml;";
+            ofdVersionLookup.Filter = "XML Files(*.xml)|*.xml";
             if (ofdVersionLookup.ShowDialog() == DialogResult.OK)
             {
                 LoadMainFrm(ofdVersionLookup.FileName);
@@ -2044,7 +2066,7 @@ namespace UpdateModul
             string path = string.Empty;
             if (!string.IsNullOrWhiteSpace(CGlobVars.currentlyLoadedFile))
             {
-                path = Path.GetFullPath(CGlobVars.currentlyLoadedFile);
+                path = Path.GetDirectoryName(CGlobVars.currentlyLoadedFile);
                 if (!string.IsNullOrWhiteSpace(path))
                 {
                     ofdIcon.InitialDirectory = path;
@@ -2123,7 +2145,7 @@ namespace UpdateModul
             string path = string.Empty;
             if (!string.IsNullOrWhiteSpace(CGlobVars.currentlyLoadedFile))
             {
-                path = Path.GetFullPath(CGlobVars.currentlyLoadedFile);
+                path = Path.GetDirectoryName(CGlobVars.currentlyLoadedFile);
                 if (!string.IsNullOrWhiteSpace(path))
                 {
                     ofdVersionLookup.InitialDirectory = path;
@@ -2142,7 +2164,7 @@ namespace UpdateModul
             }
 
 
-            
+
         }
 
         private void tsTVcopyPhysical_Click(object sender, EventArgs e)
@@ -2265,6 +2287,7 @@ namespace UpdateModul
             txDisplayGuid.ReadOnly = false;
             txDisplayGuid.Focus();
             txDisplayGuid.SelectAll();
+            txDisplayGuid.ContextMenuStrip = null;
         }
 
         private void txDisplayGuid_TextChanged(object sender, EventArgs e)
@@ -2298,6 +2321,92 @@ namespace UpdateModul
                 lblGuidError.Visible = true;
             }
             configureDetailsSaveButton();
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.PageDown)
+            {
+                if (TVmain.SelectedNode != null)
+                {
+                    TVmain.SelectedNode.ExpandAll();
+                    return true;
+                }
+                
+            }
+            if (keyData == Keys.PageUp)
+            {
+                if (TVmain.SelectedNode != null)
+                {
+                    TVmain.SelectedNode.Collapse();
+                    return true;
+                }
+                
+            }
+            if (keyData == Keys.F4)
+            {
+                tsTVhideParentDownloads.PerformClick();
+                return true;
+            }
+            if (keyData == Keys.F5)
+            {
+                LoadTreeview();
+                return true;
+            }
+            if (keyData == Keys.Delete)
+            {
+                if (TVmain.SelectedNode != null)
+                {
+                    tsTVdeleteNode.PerformClick();
+                    return true;
+                }
+                
+            }
+            // Call the base class
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void tsTVhideParentDownloads_Click(object sender, EventArgs e)
+        {
+            TVmain.BeginUpdate();
+            List<TreeNode> delList = new List<TreeNode>();
+            TreeNode parent = TVmain.SelectedNode.Parent;
+            while ((parent != null) && (parent.ImageIndex == 3))
+            {
+                RemoveNode(parent);
+                parent = TVmain.SelectedNode.Parent;
+            }
+            TVmain.EndUpdate();
+        }
+
+        private void RemoveNode(TreeNode nodeToRemove)
+        {
+            if (nodeToRemove.Nodes.Count > 0)
+            {
+                List<TreeNode> childNodes = new List<TreeNode>();
+                foreach (TreeNode n in nodeToRemove.Nodes)
+                {
+                    childNodes.Add(n);
+                }
+                if ((nodeToRemove.Parent != null))
+                {
+                    foreach (TreeNode child in childNodes)
+                    {
+                        TreeNode newNode = (TreeNode)child.Clone();
+                        nodeToRemove.Parent.Nodes.Add(newNode);
+                    }
+                    foreach (TreeNode child in childNodes)
+                    {
+                        child.Remove();
+                    }
+
+                }
+                else
+                {
+                    //nodeToRemove.TreeView.Nodes.AddRange(childNodes.ToArray());
+                }
+            }
+            nodeToRemove.Remove();
         }
     }
 }

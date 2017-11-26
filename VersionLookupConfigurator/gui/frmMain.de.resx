@@ -128,14 +128,14 @@
     <value>Suchbegriff...</value>
   </data>
   <data name="contextTV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 214</value>
+    <value>299, 242</value>
   </data>
   <data name="imgListTV.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAo
-        FgAAAk1TRnQBSQFMAgEBDAEAAYwBAQGMAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        FgAAAk1TRnQBSQFMAgEBDAEAAaQBAQGkAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAAUADAAEBAQABCAYAARAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -233,64 +233,85 @@
 </value>
   </data>
   <data name="tsTVcreateClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>298, 22</value>
   </data>
   <data name="tsTVcreateClient.Text" xml:space="preserve">
     <value>Neuen Mandanten anlegen</value>
   </data>
   <data name="tsTVcreateProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>298, 22</value>
   </data>
   <data name="tsTVcreateProduct.Text" xml:space="preserve">
     <value>Neues Produkt anlegen</value>
   </data>
   <data name="tsTVcreateLogical.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>298, 22</value>
   </data>
   <data name="tsTVcreateLogical.Text" xml:space="preserve">
     <value>Neuen Ordner anlegen</value>
   </data>
   <data name="tsTVcreatePhysical.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>298, 22</value>
   </data>
   <data name="tsTVcreatePhysical.Text" xml:space="preserve">
     <value>Leeren Download anlegen</value>
   </data>
   <data name="tsTVcopyPhysical.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>298, 22</value>
   </data>
   <data name="tsTVcopyPhysical.Text" xml:space="preserve">
     <value>Aktuellen Download kopieren</value>
   </data>
   <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 6</value>
+    <value>295, 6</value>
   </data>
   <data name="tsTVeditNode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>298, 22</value>
   </data>
   <data name="tsTVeditNode.Text" xml:space="preserve">
     <value>Bearbeiten</value>
   </data>
+  <data name="tsTVdeleteNode.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Entf</value>
+  </data>
   <data name="tsTVdeleteNode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>298, 22</value>
   </data>
   <data name="tsTVdeleteNode.Text" xml:space="preserve">
     <value>Entfernen</value>
   </data>
   <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 6</value>
+    <value>295, 6</value>
+  </data>
+  <data name="tsTVExpandBranch.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Bild Ab</value>
   </data>
   <data name="tsTVExpandBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>298, 22</value>
   </data>
   <data name="tsTVExpandBranch.Text" xml:space="preserve">
     <value>Zweig ab hier aufklappen</value>
   </data>
+  <data name="tsTVCollapseBranch.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Bild Auf</value>
+  </data>
   <data name="tsTVCollapseBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
+    <value>298, 22</value>
   </data>
   <data name="tsTVCollapseBranch.Text" xml:space="preserve">
     <value>Zweig ab hier zuklappen</value>
+  </data>
+  <data name="toolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 6</value>
+  </data>
+  <data name="tsTVhideParentDownloads.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>F4</value>
+  </data>
+  <data name="tsTVhideParentDownloads.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 22</value>
+  </data>
+  <data name="tsTVhideParentDownloads.Text" xml:space="preserve">
+    <value>Übergeordnete Downloads ausblenden</value>
   </data>
   <data name="lbDetailParents.Location" type="System.Drawing.Point, System.Drawing">
     <value>298, 282</value>
@@ -397,6 +418,66 @@
   </data>
   <data name="LvnameInt.Text" xml:space="preserve">
     <value>Versions-Name (intern)</value>
+  </data>
+  <data name="programToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="programToolStripMenuItem.Text" xml:space="preserve">
+    <value>Programm</value>
+  </data>
+  <data name="loadVersionLookupxmlToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="loadVersionLookupxmlToolStripMenuItem1.Text" xml:space="preserve">
+    <value>VersionLookup.xml laden</value>
+  </data>
+  <data name="provideVersionLookupxmlcToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="provideVersionLookupxmlcToolStripMenuItem.Text" xml:space="preserve">
+    <value>VersionLookup.xmlc bereitstellen</value>
+  </data>
+  <data name="toolStripMenuItem7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 6</value>
+  </data>
+  <data name="testEncryptedVersionLookupxmlcToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="testEncryptedVersionLookupxmlcToolStripMenuItem.Text" xml:space="preserve">
+    <value>Verschlüsselte VersionLookup.xmlc testen</value>
+  </data>
+  <data name="toolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 6</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
+  <data name="expandTreeToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="expandTreeToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Daten</value>
+  </data>
+  <data name="collapseTreeToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 22</value>
+  </data>
+  <data name="collapseTreeToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Versions-Baum aufspannen</value>
+  </data>
+  <data name="collapseTreeToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 22</value>
+  </data>
+  <data name="collapseTreeToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Versions-Baum zusammenklappen</value>
+  </data>
+  <data name="reloadTreeToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 22</value>
+  </data>
+  <data name="reloadTreeToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Versions-Baum neu laden</value>
   </data>
   <data name="programmToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 20</value>

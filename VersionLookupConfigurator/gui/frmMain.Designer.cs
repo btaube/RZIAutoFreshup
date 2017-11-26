@@ -47,6 +47,8 @@
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.tsTVExpandBranch = new System.Windows.Forms.ToolStripMenuItem();
             this.tsTVCollapseBranch = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsTVhideParentDownloads = new System.Windows.Forms.ToolStripMenuItem();
             this.imgListTV = new System.Windows.Forms.ImageList(this.components);
             this.lbDetailParents = new System.Windows.Forms.Label();
             this.bProductsDelIcon = new System.Windows.Forms.Button();
@@ -74,6 +76,17 @@
             this.LvnameExt = new System.Windows.Forms.Label();
             this.LvnameInt = new System.Windows.Forms.Label();
             this.menuMain = new System.Windows.Forms.MenuStrip();
+            this.programToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadVersionLookupxmlToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.provideVersionLookupxmlcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripSeparator();
+            this.testEncryptedVersionLookupxmlcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.expandTreeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.collapseTreeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.collapseTreeToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reloadTreeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.programmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadVersionLookupxmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.provideVersionLookupxmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -180,7 +193,9 @@
             this.tsTVdeleteNode,
             this.toolStripMenuItem4,
             this.tsTVExpandBranch,
-            this.tsTVCollapseBranch});
+            this.tsTVCollapseBranch,
+            this.toolStripMenuItem6,
+            this.tsTVhideParentDownloads});
             this.contextTV.Name = "contextTV";
             resources.ApplyResources(this.contextTV, "contextTV");
             this.contextTV.Opening += new System.ComponentModel.CancelEventHandler(this.contextTV_Opening);
@@ -248,6 +263,17 @@
             resources.ApplyResources(this.tsTVCollapseBranch, "tsTVCollapseBranch");
             this.tsTVCollapseBranch.Name = "tsTVCollapseBranch";
             this.tsTVCollapseBranch.Click += new System.EventHandler(this.tsTVCollapseBranch_Click);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            resources.ApplyResources(this.toolStripMenuItem6, "toolStripMenuItem6");
+            // 
+            // tsTVhideParentDownloads
+            // 
+            resources.ApplyResources(this.tsTVhideParentDownloads, "tsTVhideParentDownloads");
+            this.tsTVhideParentDownloads.Name = "tsTVhideParentDownloads";
+            this.tsTVhideParentDownloads.Click += new System.EventHandler(this.tsTVhideParentDownloads_Click);
             // 
             // imgListTV
             // 
@@ -437,11 +463,83 @@
             // menuMain
             // 
             this.menuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.programmToolStripMenuItem,
-            this.datenToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.programToolStripMenuItem,
+            this.expandTreeToolStripMenuItem1});
             resources.ApplyResources(this.menuMain, "menuMain");
             this.menuMain.Name = "menuMain";
+            // 
+            // programToolStripMenuItem
+            // 
+            this.programToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loadVersionLookupxmlToolStripMenuItem1,
+            this.provideVersionLookupxmlcToolStripMenuItem,
+            this.toolStripMenuItem7,
+            this.testEncryptedVersionLookupxmlcToolStripMenuItem,
+            this.toolStripMenuItem8,
+            this.exitToolStripMenuItem});
+            this.programToolStripMenuItem.Name = "programToolStripMenuItem";
+            resources.ApplyResources(this.programToolStripMenuItem, "programToolStripMenuItem");
+            // 
+            // loadVersionLookupxmlToolStripMenuItem1
+            // 
+            this.loadVersionLookupxmlToolStripMenuItem1.Name = "loadVersionLookupxmlToolStripMenuItem1";
+            resources.ApplyResources(this.loadVersionLookupxmlToolStripMenuItem1, "loadVersionLookupxmlToolStripMenuItem1");
+            this.loadVersionLookupxmlToolStripMenuItem1.Click += new System.EventHandler(this.loadVersionLookupxmlToolStripMenuItem_Click);
+            // 
+            // provideVersionLookupxmlcToolStripMenuItem
+            // 
+            this.provideVersionLookupxmlcToolStripMenuItem.Name = "provideVersionLookupxmlcToolStripMenuItem";
+            resources.ApplyResources(this.provideVersionLookupxmlcToolStripMenuItem, "provideVersionLookupxmlcToolStripMenuItem");
+            this.provideVersionLookupxmlcToolStripMenuItem.Click += new System.EventHandler(this.provideVersionLookupxmlToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            resources.ApplyResources(this.toolStripMenuItem7, "toolStripMenuItem7");
+            // 
+            // testEncryptedVersionLookupxmlcToolStripMenuItem
+            // 
+            this.testEncryptedVersionLookupxmlcToolStripMenuItem.Name = "testEncryptedVersionLookupxmlcToolStripMenuItem";
+            resources.ApplyResources(this.testEncryptedVersionLookupxmlcToolStripMenuItem, "testEncryptedVersionLookupxmlcToolStripMenuItem");
+            this.testEncryptedVersionLookupxmlcToolStripMenuItem.Click += new System.EventHandler(this.loadEncryptedVersionLookupxmlcToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            resources.ApplyResources(this.toolStripMenuItem8, "toolStripMenuItem8");
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.beendenToolStripMenuItem_Click);
+            // 
+            // expandTreeToolStripMenuItem1
+            // 
+            this.expandTreeToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.collapseTreeToolStripMenuItem1,
+            this.collapseTreeToolStripMenuItem2,
+            this.reloadTreeToolStripMenuItem1});
+            this.expandTreeToolStripMenuItem1.Name = "expandTreeToolStripMenuItem1";
+            resources.ApplyResources(this.expandTreeToolStripMenuItem1, "expandTreeToolStripMenuItem1");
+            // 
+            // collapseTreeToolStripMenuItem1
+            // 
+            this.collapseTreeToolStripMenuItem1.Name = "collapseTreeToolStripMenuItem1";
+            resources.ApplyResources(this.collapseTreeToolStripMenuItem1, "collapseTreeToolStripMenuItem1");
+            this.collapseTreeToolStripMenuItem1.Click += new System.EventHandler(this.expandTreeToolStripMenuItem_Click);
+            // 
+            // collapseTreeToolStripMenuItem2
+            // 
+            this.collapseTreeToolStripMenuItem2.Name = "collapseTreeToolStripMenuItem2";
+            resources.ApplyResources(this.collapseTreeToolStripMenuItem2, "collapseTreeToolStripMenuItem2");
+            this.collapseTreeToolStripMenuItem2.Click += new System.EventHandler(this.collapseTreeToolStripMenuItem_Click);
+            // 
+            // reloadTreeToolStripMenuItem1
+            // 
+            this.reloadTreeToolStripMenuItem1.Name = "reloadTreeToolStripMenuItem1";
+            resources.ApplyResources(this.reloadTreeToolStripMenuItem1, "reloadTreeToolStripMenuItem1");
+            this.reloadTreeToolStripMenuItem1.Click += new System.EventHandler(this.reloadTreeToolStripMenuItem_Click);
             // 
             // programmToolStripMenuItem
             // 
@@ -754,6 +852,19 @@
         private System.Windows.Forms.Label lblParentVersion;
         private System.Windows.Forms.Label lblGuidAlreadyInUse;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem tsTVhideParentDownloads;
+        private System.Windows.Forms.ToolStripMenuItem programToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadVersionLookupxmlToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem provideVersionLookupxmlcToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem testEncryptedVersionLookupxmlcToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem8;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem expandTreeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem collapseTreeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem collapseTreeToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem reloadTreeToolStripMenuItem1;
     }
 }
 
