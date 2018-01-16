@@ -809,9 +809,9 @@ namespace UpdateModul
                 string savePath = refinedPath;
                 try
                 {
-                    if (File.Exists(savePath + CGlobVars.VERSION_LOOKUP_XML))
+                    if (File.Exists(savePath + CGlobVars.ENCRYPTED_VERSION_LOOKUP_XML))
                     {
-                        File.Delete(savePath + CGlobVars.VERSION_LOOKUP_XML);
+                        File.Delete(savePath + CGlobVars.ENCRYPTED_VERSION_LOOKUP_XML);
                     }
 
                     string finalSource = CGlobVars.currentlyLoadedFile;
