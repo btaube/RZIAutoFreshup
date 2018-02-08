@@ -778,10 +778,10 @@ namespace UpdateModul
                 objDialog.Description = translations.frmMain_Dlg_PathToExport_Title;
                 objDialog.SelectedPath = @"C:\";
                 string path = string.Empty;
-                if (!string.IsNullOrWhiteSpace(CGlobVars.currentlyLoadedFile))
+                if (!string.IsNullOrEmpty(CGlobVars.currentlyLoadedFile.Trim()))
                 {
                     path = Path.GetDirectoryName(CGlobVars.currentlyLoadedFile);
-                    if (!string.IsNullOrWhiteSpace(path))
+                    if (path != null && !string.IsNullOrEmpty(path.Trim()))
                     {
                         objDialog.SelectedPath = path;
                     }

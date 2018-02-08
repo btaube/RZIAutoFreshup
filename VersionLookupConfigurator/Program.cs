@@ -49,7 +49,7 @@ namespace UpdateModul
                 {
                     CGlobVars.Client = ConfigurationManager.AppSettings["Client"].ToString().ToUpper().Replace("-", "");
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
 
                 }

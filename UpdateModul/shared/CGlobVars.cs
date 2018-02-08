@@ -37,6 +37,7 @@ namespace UpdateModul.shared
         public static string logLevel;
         
         public static int VersionDescriptionID = 1; // 1 = rzi; 2 = card/1
+        public static int ApplicationName = 1; // 1 = AKVS; 2 = Tiefbau
 
         public static bool silentModeError = false;
         public static bool silentModeNoNewVersion = false;

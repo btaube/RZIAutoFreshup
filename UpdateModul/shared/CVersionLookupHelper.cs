@@ -200,7 +200,7 @@ namespace UpdateModul
                     {
                         File.Delete(VersionLookupFile);
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
 
                     }
@@ -211,7 +211,7 @@ namespace UpdateModul
                     {
                         File.Delete(CGlobVars.wrkDir + CGlobVars.VERSION_LOOKUP_XML);
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
 
                     }

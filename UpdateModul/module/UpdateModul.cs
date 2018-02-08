@@ -221,7 +221,7 @@ namespace UpdateModul
         /// <param name="Params"></param>
         /// <param name="ErrorText"></param>
         /// <returns>ReturnCodes</returns>
-        private static void SetVersionNamingPattern(String[] Params)
+        private static void SetClientNamingPattern(String[] Params)
         {
             CLog.Debug("Entered function 'SetVersionNamingPattern'");
             CLog.Debug("Provided 'Params': {0}", Params.Aggregate((a, b) => a + "," + b));
@@ -244,6 +244,43 @@ namespace UpdateModul
                     else
                     {
                         CGlobVars.VersionDescriptionID = 2;
+                    }
+
+                }
+            }
+        }
+
+        /// <summary>
+        /// Checks if a application name (AKVS, Tiefbau...) has been provided.
+        /// </summary>
+        /// <param name="Params"></param>
+        /// <param name="ErrorText"></param>
+        /// <returns>ReturnCodes</returns>
+        private static void SetApplicationName(String[] Params)
+        {
+            CLog.Debug("Entered function 'SetApplicationName'");
+            CLog.Debug("Provided 'Params': {0}", Params.Aggregate((a, b) => a + "," + b));
+            foreach (string param in Params)
+            {
+                CLog.Debug("Processed 'param': {0}", param);
+                if (param.ToLower().Contains("-appname="))
+                {
+                    CLog.Debug("Found param '-appname': {0}", param);
+                    string appName = param;
+                    if (appName.Contains("\""))
+                    {
+                        appName = appName.Replace("\"", "");
+                    }
+                    appName = appName.Substring(9);
+
+                    // Default = 1 (AKVS)
+                    CGlobVars.ApplicationName = 1;
+
+                    int val = 0;
+                    bool isValidNumber = int.TryParse(appName, out val);
+                    if (isValidNumber)
+                    {
+                        CGlobVars.ApplicationName = val;
                     }
 
                 }
@@ -343,7 +380,7 @@ namespace UpdateModul
                     {
                         CGlobVars.timeout = Convert.ToInt32(TimeoutPattern);
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         CGlobVars.timeout = 30000;
                     }
@@ -926,7 +963,7 @@ namespace UpdateModul
                 {
                     Directory.CreateDirectory(CGlobVars.wrkDir);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     return CReturnCodes.CANNOT_CREATE_WORK_DIRECTORY;
                 }
@@ -1237,7 +1274,7 @@ namespace UpdateModul
                 {
                     Directory.CreateDirectory(CGlobVars.wrkDir);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     return CReturnCodes.CANNOT_CREATE_WORK_DIRECTORY;
                 }
@@ -1251,7 +1288,7 @@ namespace UpdateModul
             // Check files
             CheckFiles();
 
-            // Load config gile
+            // Load config file
             CLog.Info("Loading VersionConfigXML.");
             int retVal = CVersionConfigHelper.DecryptAndLoadVersionConfigXML(CGlobVars.wrkDir + "VersionConfig.xmlc", out ErrorText);
             if (retVal != CReturnCodes.OK)
@@ -1326,14 +1363,21 @@ namespace UpdateModul
                 SetTimeout(Params);
 
                 //Check if version naming patterns have been provided
-                CLog.Info("Checking for version pattern parameter.");
-                SetVersionNamingPattern(Params);
+                CLog.Info("Checking for client pattern parameter.");
+                SetClientNamingPattern(Params);
+
+                //Check if version naming patterns have been provided
+                CLog.Info("Checking for application pattern parameter.");
+                SetApplicationName(Params);
 
             }
             else
             {
                 CLog.Info("No parameters have been provided.");
             }
+
+            // repair Lookup URLs
+            RepairURLs();
 
             if (!CGlobVars.ignoreCheckInterval)
             {
@@ -1466,6 +1510,24 @@ namespace UpdateModul
         }
 
 
+
+        private void RepairURLs()
+        {
+            if (CGlobVars.ApplicationName == 2)
+            {
+                String ErrorText = string.Empty;
+                String LookupUrl = CVersionConfigHelper.GetInnerTextByPathAsString("UpdateCheckContent//Repository//LookupURL", out ErrorText);
+                if (@"https://cloud.ibtnet.de/data/public/versionlookup_rzi?dl=true&file=/3c036de31c/VersionLookup.xmlc".Equals(LookupUrl))
+                {
+                    LookupUrl = @"http://update.card-1.com/updater_rzi/tiefbau/versionlookup.xmlc";
+                    CVersionConfigHelper.SetInnerTextByPathAsString("UpdateCheckContent//Repository//LookupURL", LookupUrl, out ErrorText);
+                    CVersionConfigHelper.SaveVersionConfigXML(out ErrorText);
+                    Thread.Sleep(300);
+                    Application.DoEvents();
+                    CVersionConfigHelper.DecryptAndLoadVersionConfigXML(CGlobVars.wrkDir + "VersionConfig.xmlc", out ErrorText);
+                }
+            }
+        }
 
 
         /// <summary>

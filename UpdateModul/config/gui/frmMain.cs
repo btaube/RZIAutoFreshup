@@ -470,7 +470,7 @@ namespace UpdateModul
         private void frmMain_Shown(object sender, EventArgs e)
         {
             //
-            string ErrorText;
+            //string ErrorText;
             // load xml file
             //if (!CVersionConfigHelper.LoadVersionConfigXML(out ErrorText))
             //{
@@ -880,7 +880,7 @@ namespace UpdateModul
                     try
                     {
                         File.Delete(VersionLookupFile);
-                    } catch (Exception ex)
+                    } catch (Exception)
                     {
 
                     }
@@ -891,7 +891,7 @@ namespace UpdateModul
                     {
                         File.Delete(CGlobVars.wrkDir + CGlobVars.VERSION_LOOKUP_XML);
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
 
                     }

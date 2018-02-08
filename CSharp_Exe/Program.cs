@@ -100,11 +100,11 @@ namespace UpdateExe
             try
             {
                 CUpdateModul um = new CUpdateModul();
-                String[] Params = new String[] { "-versionname=2", "-pass=admin_updater", "-ignoreinterval=true", "-timeout=10000" };
+                String[] Params = new String[] { "-versionname=2", "-appname=2", "-pass=admin_updater", "-ignoreinterval=true", "-timeout=10000" };
                 //int returnVal = um.CheckForUpdates(paramLanguage, "ea986764-8407-48aa-8d5a-0cc4d7832604", "", Params);
-                //int returnVal = um.CheckForUpdates(paramLanguage, "bb1d828f-2550-4e3d-8d14-875bb8b6bcba", "", Params);
+                int returnVal = um.CheckForUpdates(paramLanguage, "bb1d828f-2550-4e3d-8d14-875bb8b6bcba", "", Params);
 
-                int returnVal = um.OpenConfig("de-DE", "df2d36ca-2fb9-410b-bc84-323ad2eeb81b", "", Params);
+                //int returnVal = um.OpenConfig("de-DE", "df2d36ca-2fb9-410b-bc84-323ad2eeb81b", "", Params);
                 //int returnVal = um.OpenConfig("de-DE", "b6984695-64a6-453b-bb5d-c7ced6a9ea5d", "", Params);
                 //int returnVal = um.OpenConfig("en-GB", "c601c7d2-eea8-444d-b8db-76e935f7473f", "", null);
 

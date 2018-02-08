@@ -239,7 +239,7 @@ namespace UpdateModul
                 {
                     RZITools._file.Close();
                     RZITools._file.Dispose();
-                } catch (Exception file)
+                } catch (Exception)
                 {
 
                 }
@@ -251,7 +251,7 @@ namespace UpdateModul
                     RZITools._fstr.Close();
                     RZITools._fstr.Dispose();
                 }
-                catch (Exception fstr)
+                catch (Exception)
                 {
 
                 }
@@ -263,7 +263,7 @@ namespace UpdateModul
                     RZITools._ms.Close();
                     RZITools._ms.Dispose();
                 }
-                catch (Exception ms)
+                catch (Exception)
                 {
 
                 }

@@ -732,7 +732,7 @@ namespace UpdateModul
                     {
                         Directory.CreateDirectory(CGlobVars.wrkDir);
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         return CReturnCodes.CANNOT_CREATE_WORK_DIRECTORY;
                     }
